@@ -289,7 +289,17 @@ h2 {
     height: 100%;
     object-fit: cover;
 }
-
+.booth-placeholder {
+    height: 300px;
+    background: #eeeeee;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #888888;
+    font-size: 14px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
 .booth-card-content {
     padding: 30px;
 }
