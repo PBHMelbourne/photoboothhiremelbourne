@@ -15,3 +15,14 @@ p {
     font-size: 20px;
     text-align: center;
 }
+.button {
+    display: block;
+    width: fit-content;
+    margin: 30px auto;
+    padding: 15px 30px;
+    background: #7f61ff;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-size: 18px;
+}
