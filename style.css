@@ -87,3 +87,14 @@ nav a:hover {
     display: block;
     margin: 0 auto 40px;
 }
+.hero-image {
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto 50px;
+}
+
+.hero-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
