@@ -64,3 +64,14 @@ h2 {
     margin: 0 auto;
     line-height: 1.6;
 }
+
+
+header {
+    text-align: center;
+    padding: 20px;
+}
+
+header img {
+    max-width: 250px;
+    height: auto;
+}
