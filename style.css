@@ -80,3 +80,10 @@ header img {
 nav a:hover {
     color: #7f61ff;
 }
+.hero img {
+    max-width: 100%;
+    width: 900px;
+    height: auto;
+    display: block;
+    margin: 0 auto 40px;
+}
