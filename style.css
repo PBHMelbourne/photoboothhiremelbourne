@@ -279,16 +279,15 @@ h2 {
     box-shadow: 0 15px 45px rgba(0, 0, 0, 0.11);
 }
 
-.booth-placeholder {
+.booth-image {
     height: 300px;
-    background: #eeeeee;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #888888;
-    font-size: 14px;
-    letter-spacing: 1px;
-    text-transform: uppercase;
+    overflow: hidden;
+}
+
+.booth-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .booth-card-content {
@@ -530,10 +529,6 @@ h2 {
 
     h2 {
         font-size: 32px;
-    }
-
-    .booth-placeholder {
-        height: 240px;
     }
 
 }
