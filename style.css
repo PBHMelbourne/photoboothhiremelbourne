@@ -289,6 +289,11 @@ h2 {
     height: 100%;
     object-fit: cover;
 }
+
+.booth-card:nth-child(9) .booth-image img {
+    object-fit: contain;
+    background: #eeeeee;
+}
 .booth-placeholder {
     height: 300px;
     background: #eeeeee;
