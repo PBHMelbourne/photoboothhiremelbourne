@@ -8,6 +8,7 @@
 
 html {
     scroll-behavior: smooth;
+    scroll-padding-top: 110px;
 }
 
 body {
@@ -546,4 +547,7 @@ h2 {
         font-size: 32px;
     }
 
+}
+html {
+    scroll-padding-top: 110px;
 }
