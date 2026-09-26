@@ -245,6 +245,11 @@ color: #555555;
     color: #555555;
     font-size: 19px;
 }
+.about-content a {
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 3px;
+}
 
 .about-content p:last-child {
     margin-bottom: 0;
