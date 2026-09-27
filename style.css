@@ -575,3 +575,9 @@ html {
     margin-right: 14px;
     opacity: 0.6;
 }
+.footer-contact a + a::before,
+.footer-links a + a::before {
+    content: "|";
+    margin-right: 14px;
+    opacity: 0.6;
+}
