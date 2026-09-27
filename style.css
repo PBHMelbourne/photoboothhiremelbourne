@@ -581,3 +581,46 @@ html {
     margin-right: 14px;
     opacity: 0.6;
 }
+/* TERMS & CONDITIONS */
+.terms-section {
+    background: #f8f7ff;
+    padding: 90px 30px;
+}
+
+.terms-content {
+    max-width: 850px;
+    margin: 0 auto;
+    background: #ffffff;
+    padding: 55px 60px;
+    border-radius: 18px;
+    box-shadow: 0 8px 35px rgba(0, 0, 0, 0.06);
+}
+
+.terms-content h1 {
+    margin: 0 0 35px;
+    font-size: 48px;
+    line-height: 1.15;
+    text-align: center;
+}
+
+.terms-content h2 {
+    margin: 45px 0 15px;
+    font-size: 27px;
+}
+
+.terms-content p {
+    margin: 0 0 18px;
+    color: #555555;
+    font-size: 16px;
+}
+
+.terms-content ul,
+.terms-content ol {
+    margin: 0 0 22px;
+    padding-left: 25px;
+    color: #555555;
+}
+
+.terms-content li {
+    margin-bottom: 9px;
+}
