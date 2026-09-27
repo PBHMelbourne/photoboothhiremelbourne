@@ -79,7 +79,7 @@
 
             <div class="faq-item">
 <button class="faq-question" type="button">
-    <span>>How long can I hire a photo booth for?</span>
+    <span>How long can I hire a photo booth for?</span>
     <span class="faq-icon">+</span>
 </button>
                 <p>
@@ -101,7 +101,7 @@
 
             <div class="faq-item">
 <button class="faq-question" type="button">
-    <span>>Do you provide backdrops and props?</span>
+    <span>Do you provide backdrops and props?</span>
     <span class="faq-icon">+</span>
 </button>
                 <p>
@@ -156,7 +156,7 @@
 
             <div class="faq-item">
 <button class="faq-question" type="button">
-    <span>>Do you provide Wi-Fi for the photo booth?</span>
+    <span>Do you provide Wi-Fi for the photo booth?</span>
     <span class="faq-icon">+</span>
 </button>
                 <p>
@@ -500,9 +500,16 @@
 
 </style>
 <script>
-document.querySelectorAll('.faq-question').forEach(function(question) {
-    question.addEventListener('click', function() {
-        const item = question.closest('.faq-item');
+document.querySelectorAll('.faq-question').forEach(function (question) {
+    question.addEventListener('click', function () {
+        const item = this.closest('.faq-item');
+
+        document.querySelectorAll('.faq-item.open').forEach(function (openItem) {
+            if (openItem !== item) {
+                openItem.classList.remove('open');
+            }
+        });
+
         item.classList.toggle('open');
     });
 });
