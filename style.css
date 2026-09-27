@@ -556,3 +556,22 @@ color: #999999;
 html {
     scroll-padding-top: 110px;
 }
+.footer-contact,
+.footer-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+    flex-wrap: wrap;
+}
+
+.footer-links {
+    margin-top: 18px;
+}
+
+.footer-contact a + a::before,
+.footer-links a + a::before {
+    content: "|";
+    margin-right: 14px;
+    opacity: 0.6;
+}
