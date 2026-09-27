@@ -500,9 +500,9 @@
 
 </style>
 <script>
-document.querySelectorAll('.faq-item h2').forEach(function(question) {
+document.querySelectorAll('.faq-question').forEach(function(question) {
     question.addEventListener('click', function() {
-        const item = question.parentElement;
+        const item = question.closest('.faq-item');
         item.classList.toggle('open');
     });
 });
