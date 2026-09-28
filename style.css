@@ -739,3 +739,16 @@ html {
     text-transform: uppercase;
     margin: 0 0 14px;
 }
+.feature-number {
+    width: 58px;
+    height: 58px;
+    margin: 0 auto 22px;
+    border: 1px solid #7f61ff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #7f61ff;
+    font-size: 13px;
+    font-weight: 700;
+}
