@@ -335,7 +335,167 @@ h2 {
 .about-content p:last-child {
     margin-bottom: 0;
 }
+/* =========================================================
+   GOOGLE REVIEWS
+   ========================================================= */
 
+.reviews-section {
+    padding: 90px 20px;
+    background: #fafafa;
+}
+
+.reviews-inner {
+    max-width: 1180px;
+    margin: 0 auto;
+}
+
+.reviews-heading {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.reviews-eyebrow {
+    margin: 0 0 12px;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #7f61ff;
+    text-transform: uppercase;
+}
+
+.reviews-heading h2 {
+    margin: 0 0 16px;
+    font-size: 34px;
+    line-height: 1.2;
+    font-weight: 700;
+    color: #222222;
+}
+
+.reviews-rating {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 15px;
+    color: #555555;
+}
+
+.reviews-stars {
+    color: #f5b942;
+    letter-spacing: 2px;
+    font-size: 17px;
+}
+
+.reviews-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.review-card {
+    background: #ffffff;
+    border: 1px solid #eeeeee;
+    border-radius: 14px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    min-height: 300px;
+    box-sizing: border-box;
+}
+
+.review-card-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    margin-bottom: 22px;
+}
+
+.review-stars {
+    color: #f5b942;
+    letter-spacing: 2px;
+    font-size: 15px;
+    white-space: nowrap;
+}
+
+.review-google {
+    font-size: 12px;
+    color: #888888;
+    font-weight: 600;
+}
+
+.review-card blockquote {
+    margin: 0;
+    font-size: 15px;
+    line-height: 1.75;
+    color: #444444;
+    flex: 1;
+}
+
+.review-card-footer {
+    margin-top: 25px;
+    padding-top: 18px;
+    border-top: 1px solid #eeeeee;
+}
+
+.review-name {
+    margin: 0;
+    font-size: 14px;
+    font-weight: 700;
+    color: #222222;
+}
+
+.review-source {
+    margin: 4px 0 0;
+    font-size: 12px;
+    color: #999999;
+}
+
+.reviews-footer {
+    text-align: center;
+    margin-top: 38px;
+}
+
+.reviews-footer a {
+    color: #7f61ff;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.reviews-footer a:hover {
+    text-decoration: underline;
+}
+
+
+/* =========================================================
+   REVIEWS - MOBILE
+   ========================================================= */
+
+@media (max-width: 800px) {
+
+    .reviews-section {
+        padding: 70px 20px;
+    }
+
+    .reviews-heading {
+        margin-bottom: 35px;
+    }
+
+    .reviews-heading h2 {
+        font-size: 28px;
+    }
+
+    .reviews-grid {
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+
+    .review-card {
+        min-height: auto;
+        padding: 25px;
+    }
+
+}
 
 /* =========================================================
    PHOTO BOOTHS
