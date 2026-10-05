@@ -850,6 +850,10 @@ html {
 }
 @media (max-width: 800px) {
 
+    .nav-dropdown:hover .nav-dropdown-menu {
+        display: none;
+    }
+
     .nav-dropdown.open .nav-dropdown-menu {
         display: block;
     }
