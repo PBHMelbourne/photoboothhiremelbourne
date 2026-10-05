@@ -1068,8 +1068,8 @@ h2 {
 
 .digital-content-showcase-media img {
     display: block;
-    width: 220px;
-    height: 220px;
+    width: 250px;
+    height: 250px;
     object-fit: cover;
     border-radius: 14px;
     box-shadow: 0 14px 35px rgba(0, 0, 0, 0.10);
@@ -1446,10 +1446,10 @@ h2 {
         order: 1;
     }
 
-    .digital-content-showcase-media img {
-        width: 160px;
-        height: 160px;
-    }
+.digital-content-showcase-media img {
+    width: 180px;
+    height: 180px;
+}
 
     .digital-content-showcase-content {
         order: 2;
