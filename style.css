@@ -38,7 +38,7 @@ a {
     border-bottom: 1px solid #eeeeee;
     position: sticky;
     top: 0;
-    z-index: 100;
+    z-index: 1000;
 }
 
 .header-inner {
@@ -94,9 +94,9 @@ a {
 }
 
 
-/* =========================
+/* =========================================================
    EVENTS DROPDOWN
-========================= */
+========================================================= */
 
 .nav-dropdown {
     position: relative;
@@ -130,7 +130,7 @@ a {
 
 .nav-dropdown-menu {
     position: absolute;
-top: 100%;
+    top: 100%;
     left: 50%;
     transform: translateX(-50%);
     width: 270px;
@@ -163,12 +163,6 @@ top: 100%;
 .nav-dropdown:hover .nav-dropdown-menu,
 .nav-dropdown:focus-within .nav-dropdown-menu {
     display: block;
-}
-
-/* Keep dropdown above page content */
-.site-header {
-    position: relative;
-    z-index: 1000;
 }
 
 
@@ -335,9 +329,11 @@ h2 {
 .about-content p:last-child {
     margin-bottom: 0;
 }
+
+
 /* =========================================================
    GOOGLE REVIEWS
-   ========================================================= */
+========================================================= */
 
 .reviews-section {
     padding: 90px 20px;
@@ -466,36 +462,6 @@ h2 {
     text-decoration: underline;
 }
 
-
-/* =========================================================
-   REVIEWS - MOBILE
-   ========================================================= */
-
-@media (max-width: 800px) {
-
-    .reviews-section {
-        padding: 70px 20px;
-    }
-
-    .reviews-heading {
-        margin-bottom: 35px;
-    }
-
-    .reviews-heading h2 {
-        font-size: 28px;
-    }
-
-    .reviews-grid {
-        grid-template-columns: 1fr;
-        gap: 18px;
-    }
-
-    .review-card {
-        min-height: auto;
-        padding: 25px;
-    }
-
-}
 
 /* =========================================================
    PHOTO BOOTHS
@@ -969,6 +935,230 @@ h2 {
 
 
 /* =========================================================
+   EXPERIENTIAL PAGE
+   PAIRED L'ORÉAL / GARNIER ACTIVATIONS
+========================================================= */
+
+.activation-feature {
+    padding: 90px 20px;
+    background: #ffffff;
+}
+
+.activation-feature-inner {
+    max-width: 1180px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: minmax(0, 300px) minmax(0, 1fr) minmax(0, 300px);
+    gap: 45px;
+    align-items: center;
+}
+
+.activation-feature-media {
+    display: flex;
+    justify-content: center;
+}
+
+.activation-feature-media video {
+    display: block;
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 14px;
+    box-shadow: 0 18px 45px rgba(0, 0, 0, 0.12);
+}
+
+.activation-feature-content {
+    max-width: 440px;
+    margin: 0 auto;
+}
+
+.activation-feature-content .eyebrow {
+    margin-bottom: 12px;
+}
+
+.activation-feature-content h2 {
+    margin: 0 0 20px;
+    font-size: 34px;
+    line-height: 1.2;
+    color: #222222;
+}
+
+.activation-feature-content p {
+    margin: 0 0 18px;
+    font-size: 16px;
+    line-height: 1.8;
+    color: #444444;
+}
+
+
+/* =========================================================
+   EXPERIENTIAL PAGE
+   BRANDED BOOTH SHOWCASE
+========================================================= */
+
+.brand-showcase {
+    padding: 90px 20px;
+    background: #fafafa;
+}
+
+.brand-showcase-inner {
+    max-width: 1180px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 520px);
+    gap: 80px;
+    align-items: center;
+}
+
+.brand-showcase-content {
+    max-width: 560px;
+}
+
+.brand-showcase-content .eyebrow {
+    margin-bottom: 12px;
+}
+
+.brand-showcase-content h2 {
+    margin: 0 0 20px;
+    font-size: 34px;
+    line-height: 1.2;
+    color: #222222;
+}
+
+.brand-showcase-content p {
+    margin: 0 0 18px;
+    font-size: 16px;
+    line-height: 1.8;
+    color: #444444;
+}
+
+.brand-showcase-media img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 14px;
+    box-shadow: 0 18px 45px rgba(0, 0, 0, 0.12);
+}
+
+
+/* =========================================================
+   EXPERIENTIAL PAGE
+   DIGITAL BRANDED CONTENT
+========================================================= */
+
+.digital-content-showcase {
+    padding: 90px 20px;
+    background: #ffffff;
+}
+
+.digital-content-showcase-inner {
+    max-width: 1180px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    gap: 28px;
+    align-items: center;
+}
+
+.digital-content-showcase-media {
+    display: flex;
+    justify-content: center;
+    gap: 18px;
+}
+
+.digital-content-showcase-media img {
+    display: block;
+    width: 220px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 14px;
+    box-shadow: 0 14px 35px rgba(0, 0, 0, 0.10);
+}
+
+.digital-content-showcase-content {
+    max-width: 520px;
+    padding-left: 45px;
+}
+
+.digital-content-showcase-content .eyebrow {
+    margin-bottom: 12px;
+}
+
+.digital-content-showcase-content h2 {
+    margin: 0 0 20px;
+    font-size: 34px;
+    line-height: 1.2;
+    color: #222222;
+}
+
+.digital-content-showcase-content p {
+    margin: 0 0 18px;
+    font-size: 16px;
+    line-height: 1.8;
+    color: #444444;
+}
+
+
+/* =========================================================
+   EXPERIENTIAL PAGE
+   CAMPAIGN CONTENT SHOWCASE
+========================================================= */
+
+.campaign-content-showcase {
+    padding: 90px 20px;
+    background: #fafafa;
+}
+
+.campaign-content-showcase-inner {
+    max-width: 1180px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: minmax(0, 520px) minmax(0, 1fr);
+    gap: 80px;
+    align-items: center;
+}
+
+.campaign-content-showcase-media {
+    display: flex;
+    justify-content: center;
+}
+
+.campaign-content-showcase-media video,
+.campaign-content-showcase-media img {
+    display: block;
+    width: 100%;
+    max-width: 360px;
+    height: auto;
+    max-height: 540px;
+    object-fit: contain;
+    border-radius: 14px;
+    box-shadow: 0 18px 45px rgba(0, 0, 0, 0.12);
+}
+
+.campaign-content-showcase-content {
+    max-width: 540px;
+}
+
+.campaign-content-showcase-content .eyebrow {
+    margin-bottom: 12px;
+}
+
+.campaign-content-showcase-content h2 {
+    margin: 0 0 20px;
+    font-size: 34px;
+    line-height: 1.2;
+    color: #222222;
+}
+
+.campaign-content-showcase-content p {
+    margin: 0 0 18px;
+    font-size: 16px;
+    line-height: 1.8;
+    color: #444444;
+}
+
+
+/* =========================================================
    MOBILE
 ========================================================= */
 
@@ -1075,6 +1265,31 @@ h2 {
     }
 
 
+    /* Reviews */
+
+    .reviews-section {
+        padding: 70px 20px;
+    }
+
+    .reviews-heading {
+        margin-bottom: 35px;
+    }
+
+    .reviews-heading h2 {
+        font-size: 28px;
+    }
+
+    .reviews-grid {
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+
+    .review-card {
+        min-height: auto;
+        padding: 25px;
+    }
+
+
     /* Booths */
 
     .booth-grid {
@@ -1164,6 +1379,113 @@ h2 {
         font-size: 18px;
     }
 
+
+    /* Experiential - paired activations */
+
+    .activation-feature {
+        padding: 70px 20px;
+    }
+
+    .activation-feature-inner {
+        grid-template-columns: 1fr;
+        gap: 35px;
+    }
+
+    .activation-feature-content {
+        grid-column: auto;
+        grid-row: auto;
+        max-width: none;
+        text-align: center;
+    }
+
+    .activation-feature-media {
+        grid-row: auto;
+    }
+
+    .activation-feature-media video {
+        max-width: 320px;
+    }
+
+    .activation-feature-content h2 {
+        font-size: 28px;
+    }
+
+
+    /* Experiential - branded booth */
+
+    .brand-showcase {
+        padding: 70px 20px;
+    }
+
+    .brand-showcase-inner {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .brand-showcase-content {
+        max-width: none;
+    }
+
+    .brand-showcase-content h2 {
+        font-size: 28px;
+    }
+
+
+    /* Experiential - digital content */
+
+    .digital-content-showcase {
+        padding: 70px 20px;
+    }
+
+    .digital-content-showcase-inner {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .digital-content-showcase-media {
+        order: 1;
+    }
+
+    .digital-content-showcase-media img {
+        width: 160px;
+        height: 160px;
+    }
+
+    .digital-content-showcase-content {
+        order: 2;
+        max-width: none;
+        padding-left: 0;
+    }
+
+    .digital-content-showcase-content h2 {
+        font-size: 28px;
+    }
+
+
+    /* Experiential - campaign content */
+
+    .campaign-content-showcase {
+        padding: 70px 20px;
+    }
+
+    .campaign-content-showcase-inner {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .campaign-content-showcase-media {
+        order: 1;
+    }
+
+    .campaign-content-showcase-content {
+        order: 2;
+        max-width: none;
+    }
+
+    .campaign-content-showcase-content h2 {
+        font-size: 28px;
+    }
+
 }
 
 
@@ -1243,339 +1565,6 @@ h2 {
 
     .terms-content {
         padding: 30px 20px;
-    }
-
-}
-/* Experiential page - paired L'Oréal activations */
-
-.activation-feature {
-    padding: 90px 20px;
-    background: #ffffff;
-}
-
-.activation-feature-inner {
-    max-width: 1180px;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: minmax(0, 300px) minmax(0, 1fr) minmax(0, 300px);
-    gap: 45px;
-    align-items: center;
-}
-
-.activation-feature-media {
-    display: flex;
-    justify-content: center;
-}
-
-.activation-feature-media video {
-    display: block;
-    width: 100%;
-    max-width: 300px;
-    height: auto;
-    border-radius: 14px;
-    box-shadow: 0 18px 45px rgba(0, 0, 0, 0.12);
-}
-
-.activation-feature-content {
-    max-width: 440px;
-    margin: 0 auto;
-}
-
-.activation-feature-content .eyebrow {
-    margin-bottom: 12px;
-}
-
-.activation-feature-content h2 {
-    margin: 0 0 20px;
-    font-size: 34px;
-    line-height: 1.2;
-    color: #222222;
-}
-
-.activation-feature-content p {
-    margin: 0 0 18px;
-    font-size: 16px;
-    line-height: 1.8;
-    color: #444444;
-}
-
-@media (max-width: 900px) {
-
-    .activation-feature-inner {
-        grid-template-columns: 1fr 1fr;
-        gap: 25px;
-    }
-
-    .activation-feature-content {
-        grid-column: 1 / -1;
-        grid-row: 1;
-        max-width: 600px;
-        text-align: center;
-    }
-
-    .activation-feature-media {
-        grid-row: 2;
-    }
-
-}
-
-@media (max-width: 600px) {
-
-    .activation-feature {
-        padding: 70px 20px;
-    }
-
-    .activation-feature-inner {
-        grid-template-columns: 1fr;
-        gap: 35px;
-    }
-
-    .activation-feature-content {
-        grid-column: auto;
-        grid-row: auto;
-    }
-
-    .activation-feature-media {
-        grid-row: auto;
-    }
-
-    .activation-feature-media video {
-        max-width: 320px;
-    }
-
-    .activation-feature-content h2 {
-        font-size: 28px;
-    }
-
-}
-}
-/* Experiential page - branded booth showcase */
-
-.brand-showcase {
-    padding: 90px 20px;
-    background: #fafafa;
-}
-
-.brand-showcase-inner {
-    max-width: 1180px;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: minmax(0, 1fr) minmax(0, 520px);
-    gap: 80px;
-    align-items: center;
-}
-
-.brand-showcase-content {
-    max-width: 560px;
-}
-
-.brand-showcase-content .eyebrow {
-    margin-bottom: 12px;
-}
-
-.brand-showcase-content h2 {
-    margin: 0 0 20px;
-    font-size: 34px;
-    line-height: 1.2;
-    color: #222222;
-}
-
-.brand-showcase-content p {
-    margin: 0 0 18px;
-    font-size: 16px;
-    line-height: 1.8;
-    color: #444444;
-}
-
-.brand-showcase-media img {
-    display: block;
-    width: 100%;
-    height: auto;
-    border-radius: 14px;
-    box-shadow: 0 18px 45px rgba(0, 0, 0, 0.12);
-}
-
-@media (max-width: 800px) {
-
-    .brand-showcase {
-        padding: 70px 20px;
-    }
-
-    .brand-showcase-inner {
-        grid-template-columns: 1fr;
-        gap: 40px;
-    }
-
-    .brand-showcase-content {
-        max-width: none;
-    }
-
-    .brand-showcase-content h2 {
-        font-size: 28px;
-    }
-
-}
-/* Experiential page - digital branded content */
-
-.digital-content-showcase {
-    padding: 90px 20px;
-    background: #ffffff;
-}
-
-.digital-content-showcase-inner {
-    max-width: 1180px;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
-    gap: 28px;
-    align-items: center;
-}
-
-.digital-content-showcase-media {
-    display: flex;
-    justify-content: center;
-    gap: 18px;
-}
-
-.digital-content-showcase-media img {
-    display: block;
-    width: 220px;
-    height: 220px;
-    object-fit: cover;
-    border-radius: 14px;
-    box-shadow: 0 14px 35px rgba(0, 0, 0, 0.10);
-}
-
-.digital-content-showcase-content {
-    max-width: 520px;
-    padding-left: 45px;
-}
-
-.digital-content-showcase-content .eyebrow {
-    margin-bottom: 12px;
-}
-
-.digital-content-showcase-content h2 {
-    margin: 0 0 20px;
-    font-size: 34px;
-    line-height: 1.2;
-    color: #222222;
-}
-
-.digital-content-showcase-content p {
-    margin: 0 0 18px;
-    font-size: 16px;
-    line-height: 1.8;
-    color: #444444;
-}
-
-@media (max-width: 800px) {
-   
-.digital-content-showcase-media img {
-    width: 160px;
-    height: 160px;
-}
-    .digital-content-showcase {
-        padding: 70px 20px;
-    }
-
-    .digital-content-showcase-inner {
-        grid-template-columns: 1fr;
-        gap: 40px;
-    }
-
-    .digital-content-showcase-media {
-        order: 1;
-    }
-
-    .digital-content-showcase-content {
-        order: 2;
-        max-width: none;
-        padding-left: 0;
-    }
-
-    .digital-content-showcase-content h2 {
-        font-size: 28px;
-    }
-
-}
-/* Experiential page - campaign content showcase */
-
-.campaign-content-showcase {
-    padding: 90px 20px;
-    background: #fafafa;
-}
-
-.campaign-content-showcase-inner {
-    max-width: 1180px;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: minmax(0, 520px) minmax(0, 1fr);
-    gap: 80px;
-    align-items: center;
-}
-
-.campaign-content-showcase-media {
-    display: flex;
-    justify-content: center;
-}
-
-.campaign-content-showcase-media video,
-.campaign-content-showcase-media img {
-    display: block;
-    width: 100%;
-    max-width: 360px;
-    height: auto;
-    max-height: 540px;
-    object-fit: contain;
-    border-radius: 14px;
-    box-shadow: 0 18px 45px rgba(0, 0, 0, 0.12);
-}
-
-.campaign-content-showcase-content {
-    max-width: 540px;
-}
-
-.campaign-content-showcase-content .eyebrow {
-    margin-bottom: 12px;
-}
-
-.campaign-content-showcase-content h2 {
-    margin: 0 0 20px;
-    font-size: 34px;
-    line-height: 1.2;
-    color: #222222;
-}
-
-.campaign-content-showcase-content p {
-    margin: 0 0 18px;
-    font-size: 16px;
-    line-height: 1.8;
-    color: #444444;
-}
-
-@media (max-width: 800px) {
-
-    .campaign-content-showcase {
-        padding: 70px 20px;
-    }
-
-    .campaign-content-showcase-inner {
-        grid-template-columns: 1fr;
-        gap: 40px;
-    }
-
-    .campaign-content-showcase-media {
-        order: 1;
-    }
-
-    .campaign-content-showcase-content {
-        order: 2;
-        max-width: none;
-    }
-
-    .campaign-content-showcase-content h2 {
-        font-size: 28px;
     }
 
 }
