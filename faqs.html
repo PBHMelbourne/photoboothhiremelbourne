@@ -1856,27 +1856,42 @@
 
 
 <script>
+document.addEventListener("DOMContentLoaded", function () {
 
-document.querySelectorAll('.faq-question').forEach(function (question) {
+    const questions = document.querySelectorAll(".faq-question");
 
-    question.addEventListener('click', function () {
+    questions.forEach(function (question) {
 
-        const item = this.closest('.faq-item');
+        question.addEventListener("click", function () {
 
-        document.querySelectorAll('.faq-item.open').forEach(function (openItem) {
+            const item = this.closest(".faq-item");
+            const isOpen = item.classList.contains("open");
 
-            if (openItem !== item) {
-                openItem.classList.remove('open');
+            document.querySelectorAll(".faq-item.open").forEach(function (openItem) {
+
+                openItem.classList.remove("open");
+
+                const openButton = openItem.querySelector(".faq-question");
+
+                if (openButton) {
+                    openButton.setAttribute("aria-expanded", "false");
+                }
+
+            });
+
+            if (!isOpen) {
+
+                item.classList.add("open");
+
+                this.setAttribute("aria-expanded", "true");
+
             }
 
         });
 
-        item.classList.toggle('open');
-
     });
 
 });
-
 </script>
 
 
