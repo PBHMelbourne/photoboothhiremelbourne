@@ -94,9 +94,9 @@ a {
 }
 
 
-/* =========================================================
+/* =========================
    EVENTS DROPDOWN
-========================================================= */
+========================= */
 
 .nav-dropdown {
     position: relative;
@@ -115,6 +115,8 @@ a {
     display: flex;
     align-items: center;
     gap: 6px;
+    position: relative;
+    z-index: 1002;
 }
 
 .nav-dropdown-toggle:hover {
@@ -138,7 +140,7 @@ a {
     box-shadow: 0 12px 30px rgba(0, 0, 0, 0.10);
     padding: 10px 0;
     display: none;
-    z-index: 1000;
+    z-index: 1001;
 }
 
 .nav-dropdown-menu a {
@@ -149,6 +151,8 @@ a {
     font-weight: 600;
     text-decoration: none;
     white-space: nowrap;
+    position: relative;
+    z-index: 1002;
 }
 
 .nav-dropdown-menu a:hover {
@@ -158,6 +162,12 @@ a {
 
 .nav-dropdown:hover .nav-dropdown-menu {
     display: block;
+}
+
+/* Keep dropdown above page content */
+.site-header {
+    position: relative;
+    z-index: 1000;
 }
 
 
