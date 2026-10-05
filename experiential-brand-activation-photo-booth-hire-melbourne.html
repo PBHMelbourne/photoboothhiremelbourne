@@ -923,20 +923,27 @@
 
 
 <script>
-
 document.addEventListener("DOMContentLoaded", function () {
 
     const dropdown = document.querySelector(".nav-dropdown");
     const toggle = document.querySelector(".nav-dropdown-toggle");
 
-    toggle.addEventListener("click", function () {
+    if (!dropdown || !toggle) return;
 
-        dropdown.classList.toggle("open");
+    toggle.addEventListener("click", function (event) {
+
+        event.preventDefault();
+
+        const isOpen = dropdown.classList.toggle("open");
+
+        toggle.setAttribute(
+            "aria-expanded",
+            isOpen ? "true" : "false"
+        );
 
     });
 
 });
-
 </script>
 
 </body>
