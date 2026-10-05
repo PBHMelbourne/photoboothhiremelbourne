@@ -130,7 +130,7 @@ a {
 
 .nav-dropdown-menu {
     position: absolute;
-    top: calc(100% + 14px);
+top: 100%;
     left: 50%;
     transform: translateX(-50%);
     width: 270px;
@@ -160,7 +160,8 @@ a {
     color: #7f61ff;
 }
 
-.nav-dropdown:hover .nav-dropdown-menu {
+.nav-dropdown:hover .nav-dropdown-menu,
+.nav-dropdown:focus-within .nav-dropdown-menu {
     display: block;
 }
 
