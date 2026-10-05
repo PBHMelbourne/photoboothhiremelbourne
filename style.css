@@ -799,10 +799,11 @@ html {
     background: none;
     border: none;
     padding: 0;
-    font: inherit;
-    color: #222222;
+    margin: 0;
+    font-family: inherit;
     font-size: 15px;
     font-weight: 600;
+    color: #222222;
     cursor: pointer;
     display: flex;
     align-items: center;
@@ -823,16 +824,13 @@ html {
     top: calc(100% + 14px);
     left: 50%;
     transform: translateX(-50%);
-    min-width: 270px;
+    width: 270px;
     background: #ffffff;
     border: 1px solid #eeeeee;
     border-radius: 10px;
     box-shadow: 0 12px 30px rgba(0, 0, 0, 0.10);
     padding: 10px 0;
-    opacity: 0;
-    visibility: hidden;
-    pointer-events: none;
-    transition: opacity 0.2s ease, visibility 0.2s ease;
+    display: none;
     z-index: 1000;
 }
 
@@ -851,9 +849,6 @@ html {
     color: #7f61ff;
 }
 
-.nav-dropdown:hover .nav-dropdown-menu,
-.nav-dropdown:focus-within .nav-dropdown-menu {
-    opacity: 1;
-    visibility: visible;
-    pointer-events: auto;
+.nav-dropdown:hover .nav-dropdown-menu {
+    display: block;
 }
