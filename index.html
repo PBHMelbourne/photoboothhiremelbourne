@@ -616,5 +616,18 @@
 
 </footer>
 
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+    const dropdown = document.querySelector(".nav-dropdown");
+    const toggle = document.querySelector(".nav-dropdown-toggle");
+
+    toggle.addEventListener("click", function () {
+        dropdown.classList.toggle("open");
+    });
+
+});
+</script>
+
 </body>
 </html>
