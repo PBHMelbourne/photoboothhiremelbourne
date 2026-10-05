@@ -1410,15 +1410,16 @@ h2 {
 }
 
 .digital-content-showcase-media {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    justify-content: center;
     gap: 18px;
 }
 
 .digital-content-showcase-media img {
     display: block;
-    width: 100%;
-    height: auto;
+    width: 220px;
+    height: 220px;
+    object-fit: cover;
     border-radius: 14px;
     box-shadow: 0 14px 35px rgba(0, 0, 0, 0.10);
 }
@@ -1447,7 +1448,11 @@ h2 {
 }
 
 @media (max-width: 800px) {
-
+   
+.digital-content-showcase-media img {
+    width: 160px;
+    height: 160px;
+}
     .digital-content-showcase {
         padding: 70px 20px;
     }
