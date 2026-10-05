@@ -512,10 +512,6 @@ color: #999999;
         display: none;
     }
 
-    .nav-dropdown:focus-within .nav-dropdown-menu {
-        display: block;
-    }
-
     .nav-dropdown-menu a {
         padding: 9px 12px;
         font-size: 14px;
@@ -851,4 +847,11 @@ html {
 
 .nav-dropdown:hover .nav-dropdown-menu {
     display: block;
+}
+@media (max-width: 800px) {
+
+    .nav-dropdown.open .nav-dropdown-menu {
+        display: block;
+    }
+
 }
