@@ -1477,3 +1477,83 @@ h2 {
     }
 
 }
+/* Experiential page - campaign content showcase */
+
+.campaign-content-showcase {
+    padding: 90px 20px;
+    background: #fafafa;
+}
+
+.campaign-content-showcase-inner {
+    max-width: 1180px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: minmax(0, 520px) minmax(0, 1fr);
+    gap: 80px;
+    align-items: center;
+}
+
+.campaign-content-showcase-media {
+    display: flex;
+    justify-content: center;
+}
+
+.campaign-content-showcase-media video,
+.campaign-content-showcase-media img {
+    display: block;
+    width: 100%;
+    max-width: 420px;
+    height: auto;
+    max-height: 620px;
+    object-fit: contain;
+    border-radius: 14px;
+    box-shadow: 0 18px 45px rgba(0, 0, 0, 0.12);
+}
+
+.campaign-content-showcase-content {
+    max-width: 540px;
+}
+
+.campaign-content-showcase-content .eyebrow {
+    margin-bottom: 12px;
+}
+
+.campaign-content-showcase-content h2 {
+    margin: 0 0 20px;
+    font-size: 34px;
+    line-height: 1.2;
+    color: #222222;
+}
+
+.campaign-content-showcase-content p {
+    margin: 0 0 18px;
+    font-size: 16px;
+    line-height: 1.8;
+    color: #444444;
+}
+
+@media (max-width: 800px) {
+
+    .campaign-content-showcase {
+        padding: 70px 20px;
+    }
+
+    .campaign-content-showcase-inner {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .campaign-content-showcase-media {
+        order: 1;
+    }
+
+    .campaign-content-showcase-content {
+        order: 2;
+        max-width: none;
+    }
+
+    .campaign-content-showcase-content h2 {
+        font-size: 28px;
+    }
+
+}
