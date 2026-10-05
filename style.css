@@ -1257,8 +1257,8 @@ h2 {
     max-width: 1180px;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: minmax(0, 480px) minmax(0, 1fr);
-    gap: 80px;
+    grid-template-columns: minmax(0, 400px) minmax(0, 1fr);
+    gap: 70px;
     align-items: center;
 }
 
@@ -1270,7 +1270,7 @@ h2 {
 .activation-feature-media video {
     display: block;
     width: 100%;
-    max-width: 480px;
+    max-width: 400px;
     height: auto;
     border-radius: 14px;
     box-shadow: 0 18px 45px rgba(0, 0, 0, 0.12);
