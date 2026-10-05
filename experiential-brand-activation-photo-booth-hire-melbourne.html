@@ -50,6 +50,7 @@
 
 <header class="site-header">
     <div class="header-inner">
+
         <a href="./" class="logo" aria-label="Photo Booth Hire Melbourne home">
             <img src="photo-booth-hire-melbourne-logo.png"
                  alt="Photo Booth Hire Melbourne"
@@ -57,12 +58,66 @@
         </a>
 
         <nav class="main-nav">
-            <a href="./">Home</a>
-            <a href="./#about">About Us</a>
-            <a href="./#booths">Photo Booths</a>
-            <a href="https://photoboothhiremelbourne.smugmug.com/Client-Galleries">Client Gallery</a>
-            <a href="#contact">Enquire Now</a>
+
+            <a href="./"
+               aria-label="Photo Booth Hire Melbourne home">
+                Home
+            </a>
+
+            <a href="./#about"
+               aria-label="About Photo Booth Hire Melbourne">
+                About Us
+            </a>
+
+            <a href="./#booths"
+               aria-label="Melbourne photo booths">
+                Photo Booths
+            </a>
+
+            <div class="nav-dropdown">
+
+                <button type="button"
+                        class="nav-dropdown-toggle"
+                        aria-haspopup="true">
+                    Events
+                    <span class="nav-arrow">▾</span>
+                </button>
+
+                <div class="nav-dropdown-menu">
+
+                    <a href="corporate-photo-booth-hire-melbourne.html">
+                        Corporate Events
+                    </a>
+
+                    <a href="experiential-brand-activation-photo-booth-hire-melbourne.html">
+                        Experiential &amp; Brand Activations
+                    </a>
+
+                    <a href="wedding-photo-booth-hire-melbourne.html">
+                        Weddings
+                    </a>
+
+                    <a href="party-photo-booth-hire-melbourne.html">
+                        Parties &amp; Celebrations
+                    </a>
+
+                </div>
+
+            </div>
+
+            <a href="https://photoboothhiremelbourne.smugmug.com/Client-Galleries"
+               aria-label="Client photo galleries">
+                Client Gallery
+            </a>
+
+            <a href="#contact"
+               class="nav-button"
+               aria-label="Enquire about photo booth hire in Melbourne">
+                Enquire Now
+            </a>
+
         </nav>
+
     </div>
 </header>
 
@@ -613,6 +668,17 @@ alt="Branded photo booth experience at an experiential brand activation in Melbo
 
     </div>
 </footer>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
 
+    const dropdown = document.querySelector(".nav-dropdown");
+    const toggle = document.querySelector(".nav-dropdown-toggle");
+
+    toggle.addEventListener("click", function () {
+        dropdown.classList.toggle("open");
+    });
+
+});
+</script>
 </body>
 </html>
