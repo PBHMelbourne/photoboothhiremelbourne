@@ -1246,3 +1246,84 @@ h2 {
     }
 
 }
+/* Experiential page - branded activation feature */
+
+.activation-feature {
+    padding: 90px 20px;
+    background: #ffffff;
+}
+
+.activation-feature-inner {
+    max-width: 1180px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: minmax(0, 480px) minmax(0, 1fr);
+    gap: 80px;
+    align-items: center;
+}
+
+.activation-feature-media {
+    display: flex;
+    justify-content: center;
+}
+
+.activation-feature-media video {
+    display: block;
+    width: 100%;
+    max-width: 480px;
+    height: auto;
+    border-radius: 14px;
+    box-shadow: 0 18px 45px rgba(0, 0, 0, 0.12);
+}
+
+.activation-feature-content {
+    max-width: 560px;
+}
+
+.activation-feature-content .eyebrow {
+    margin-bottom: 12px;
+}
+
+.activation-feature-content h2 {
+    margin: 0 0 20px;
+    font-size: 34px;
+    line-height: 1.2;
+    color: #222222;
+}
+
+.activation-feature-content p {
+    margin: 0 0 18px;
+    font-size: 16px;
+    line-height: 1.8;
+    color: #444444;
+}
+
+@media (max-width: 800px) {
+
+    .activation-feature {
+        padding: 70px 20px;
+    }
+
+    .activation-feature-inner {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .activation-feature-media {
+        order: 1;
+    }
+
+    .activation-feature-content {
+        order: 2;
+        max-width: none;
+    }
+
+    .activation-feature-media video {
+        max-width: 480px;
+    }
+
+    .activation-feature-content h2 {
+        font-size: 28px;
+    }
+
+}
