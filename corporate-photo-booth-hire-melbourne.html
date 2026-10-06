@@ -172,155 +172,146 @@
         }
 
 
-/* PRINT + DIGITAL */
+        /* PRINT + DIGITAL */
 
-.corporate-print-digital {
-    background: #fafafa;
-}
-
-
-/* EVENT SHOWCASE */
-
-.corporate-event-showcase {
-    display: grid;
-    grid-template-columns: 250px 507px 380px;
-    gap: 20px;
-    align-items: center;
-    margin-top: 75px;
-}
-
-.corporate-event-showcase.reverse {
-    display: grid;
-    grid-template-columns: 250px 507px 380px;
-    gap: 20px;
-    align-items: center;
-    margin-top: 75px;
-}
+        .corporate-print-digital {
+            background: #fafafa;
+        }
 
 
-/* PRINT STRIP */
+        /* EVENT SHOWCASE */
 
-.corporate-event-showcase-media img,
-.corporate-event-showcase-digital img {
-    display: block;
-    width: 507px;
-    height: 507px;
-    max-width: 100%;
-    object-fit: contain;
-    margin: 0 auto;
-}
+        .corporate-event-showcase {
+            display: grid;
+            grid-template-columns: 250px 507px 380px;
+            gap: 20px;
+            align-items: center;
+            margin-top: 75px;
+        }
 
 
-/* MP4 */
+        /* SHOWCASE TEXT */
 
-.corporate-event-showcase-media video,
-.corporate-event-showcase-digital video {
-    display: block;
-    width: 380px;
-    height: 507px;
-    max-width: 100%;
-    object-fit: contain;
-    border-radius: 14px;
-}
+        .corporate-event-showcase-content {
+            max-width: 250px;
+        }
 
+        .corporate-event-showcase-content .eyebrow {
+            margin-bottom: 12px;
+        }
 
-/* SHOWCASE TEXT */
+        .corporate-event-showcase-content h2 {
+            margin: 0 0 20px;
+            font-size: 32px;
+            line-height: 1.2;
+            color: #222222;
+        }
 
-.corporate-event-showcase-content {
-    max-width: 250px;
-}
+        .corporate-event-showcase-content p {
+            margin: 0 0 18px;
+            font-size: 16px;
+            line-height: 1.8;
+            color: #555555;
+        }
 
-.corporate-event-showcase-content .eyebrow {
-    margin-bottom: 12px;
-}
-
-.corporate-event-showcase-content h2 {
-    margin: 0 0 20px;
-    font-size: 32px;
-    line-height: 1.2;
-    color: #222222;
-}
-
-.corporate-event-showcase-content p {
-    margin: 0 0 18px;
-    font-size: 16px;
-    line-height: 1.8;
-    color: #555555;
-}
-
-.corporate-event-showcase-content p:last-child {
-    margin-bottom: 0;
-}
+        .corporate-event-showcase-content p:last-child {
+            margin-bottom: 0;
+        }
 
 
-/* MEDIA ALIGNMENT */
+        /* PRINT STRIP */
 
-.corporate-event-showcase-media,
-.corporate-event-showcase-digital {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+        .corporate-event-showcase-print {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .corporate-event-showcase-print img {
+            display: block;
+            width: 507px;
+            height: 507px;
+            max-width: 100%;
+            object-fit: contain;
+            margin: 0 auto;
+        }
 
 
-/* MOBILE */
+        /* MP4 */
 
-@media (max-width: 800px) {
+        .corporate-event-showcase-video {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
 
-    .corporate-event-showcase,
-    .corporate-event-showcase.reverse {
-        display: flex;
-        flex-direction: column;
-        gap: 30px;
-        margin-top: 50px;
-    }
+        .corporate-event-showcase-video video {
+            display: block;
+            width: 380px;
+            height: 507px;
+            max-width: 100%;
+            object-fit: contain;
+            border-radius: 14px;
+        }
 
-    .corporate-event-showcase-media,
-    .corporate-event-showcase-content,
-    .corporate-event-showcase-digital {
-        width: 100%;
-        max-width: none;
-    }
 
-    /* TEXT FIRST */
+        /* 360 VIDEO */
 
-    .corporate-event-showcase-content {
-        order: 1;
-        text-align: center;
-        margin: 0 auto;
-    }
+        .corporate-video-feature {
+            text-align: center;
+        }
 
-    /* PRINT STRIP SECOND */
+        .corporate-video-feature video {
+            display: block;
+            width: 100%;
+            max-width: 760px;
+            max-height: 680px;
+            margin: 45px auto 0;
+            border-radius: 14px;
+        }
 
-    .corporate-event-showcase-media {
-        order: 2;
-    }
 
-    /* MP4 THIRD */
+        /* TWO EVENT EXAMPLES */
 
-    .corporate-event-showcase-digital {
-        order: 3;
-    }
+        .corporate-event-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+        }
 
-    .corporate-event-showcase-media img,
-    .corporate-event-showcase-digital img {
-        width: 360px;
-        height: 360px;
-        max-width: 100%;
-    }
+        .corporate-event-card {
+            background: #ffffff;
+            border: 1px solid #eeeeee;
+            border-radius: 14px;
+            overflow: hidden;
+        }
 
-    .corporate-event-showcase-media video,
-    .corporate-event-showcase-digital video {
-        width: 100%;
-        max-width: 330px;
-        height: auto;
-        max-height: 440px;
-    }
+        .corporate-event-card video {
+            display: block;
+            width: 100%;
+            height: auto;
+            max-height: 620px;
+            object-fit: contain;
+            background: #f5f5f5;
+        }
 
-    .corporate-event-showcase-content h2 {
-        font-size: 28px;
-    }
-}
+        .corporate-event-card-content {
+            padding: 28px 30px 32px;
+        }
+
+        .corporate-event-card-content h3 {
+            margin: 0 0 12px;
+            font-size: 21px;
+            line-height: 1.3;
+            color: #222222;
+        }
+
+        .corporate-event-card-content p {
+            margin: 0;
+            font-size: 15px;
+            line-height: 1.75;
+            color: #555555;
+        }
 
 
         /* MOBILE */
@@ -373,51 +364,54 @@
 
             /* PRINT + DIGITAL */
 
-            .corporate-event-showcase,
-            .corporate-event-showcase.reverse {
+            .corporate-event-showcase {
                 display: flex;
                 flex-direction: column;
                 gap: 30px;
                 margin-top: 50px;
             }
 
-            .corporate-event-showcase-media,
             .corporate-event-showcase-content,
-            .corporate-event-showcase-digital {
+            .corporate-event-showcase-print,
+            .corporate-event-showcase-video {
                 width: 100%;
                 max-width: none;
             }
 
-            .corporate-event-showcase-media {
-                order: 1;
-            }
+
+            /* TEXT FIRST */
 
             .corporate-event-showcase-content {
+                order: 1;
+                text-align: center;
+                margin: 0 auto;
+            }
+
+
+            /* PRINT STRIP SECOND */
+
+            .corporate-event-showcase-print {
                 order: 2;
             }
 
-            .corporate-event-showcase-digital {
+            .corporate-event-showcase-print img {
+                width: 360px;
+                height: 360px;
+                max-width: 100%;
+            }
+
+
+            /* MP4 THIRD */
+
+            .corporate-event-showcase-video {
                 order: 3;
             }
 
-            .corporate-event-showcase-media video,
-            .corporate-event-showcase-digital video {
+            .corporate-event-showcase-video video {
                 width: 100%;
                 max-width: 330px;
                 height: auto;
                 max-height: 440px;
-            }
-
-            .corporate-event-showcase-media img,
-            .corporate-event-showcase-digital img {
-                width: 180px;
-                height: 180px;
-                max-width: 100%;
-            }
-
-            .corporate-event-showcase-content {
-                text-align: center;
-                margin: 0 auto;
             }
 
             .corporate-event-showcase-content h2 {
@@ -847,19 +841,8 @@
 
         <div class="corporate-event-showcase">
 
-            <div class="corporate-event-showcase-media">
 
-                <video
-                    src="rome-museums-victoria-branded-photo-booth-melbourne.mp4"
-                    autoplay
-                    loop
-                    muted
-                    playsinline
-                    preload="auto">
-                </video>
-
-            </div>
-
+            <!-- TEXT -->
 
             <div class="corporate-event-showcase-content">
 
@@ -889,7 +872,9 @@
             </div>
 
 
-            <div class="corporate-event-showcase-digital">
+            <!-- PRINT STRIP -->
+
+            <div class="corporate-event-showcase-print">
 
                 <img
                     src="rome-museums-victoria-branded-print-strip-melbourne.png"
@@ -898,22 +883,31 @@
 
             </div>
 
+
+            <!-- MP4 -->
+
+            <div class="corporate-event-showcase-video">
+
+                <video
+                    src="rome-museums-victoria-branded-photo-booth-melbourne.mp4"
+                    autoplay
+                    loop
+                    muted
+                    playsinline
+                    preload="auto">
+                </video>
+
+            </div>
+
         </div>
 
 
         <!-- MCG NETWORK -->
 
-        <div class="corporate-event-showcase reverse">
+        <div class="corporate-event-showcase">
 
-            <div class="corporate-event-showcase-media">
 
-                <img
-                    src="mcg-network-branded-print-strip-melbourne.png"
-                    alt="Branded photo booth print strips from an MCG Network corporate event in Melbourne"
-                    loading="lazy">
-
-            </div>
-
+            <!-- TEXT -->
 
             <div class="corporate-event-showcase-content">
 
@@ -944,7 +938,21 @@
             </div>
 
 
-            <div class="corporate-event-showcase-digital">
+            <!-- PRINT STRIP -->
+
+            <div class="corporate-event-showcase-print">
+
+                <img
+                    src="mcg-network-branded-print-strip-melbourne.png"
+                    alt="Branded photo booth print strips from an MCG Network corporate event in Melbourne"
+                    loading="lazy">
+
+            </div>
+
+
+            <!-- MP4 -->
+
+            <div class="corporate-event-showcase-video">
 
                 <video
                     src="mcg-network-branded-photo-booth-melbourne.mp4"
