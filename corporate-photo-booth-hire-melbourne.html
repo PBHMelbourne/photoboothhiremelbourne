@@ -175,7 +175,74 @@
         .corporate-showcase-content p:last-child {
             margin-bottom: 0;
         }
+.corporate-event-showcase {
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: 60px;
+    align-items: center;
+    margin-top: 75px;
+}
 
+.corporate-event-showcase.reverse {
+    grid-template-columns: 0.9fr 1.1fr;
+}
+
+.corporate-event-showcase.reverse .corporate-event-showcase-media {
+    order: 2;
+}
+
+.corporate-event-showcase.reverse .corporate-event-showcase-content {
+    order: 1;
+}
+
+.corporate-event-showcase-media {
+    display: grid;
+    grid-template-columns: minmax(0, 1.35fr) minmax(130px, 0.65fr);
+    gap: 24px;
+    align-items: center;
+}
+
+.corporate-event-showcase-media video {
+    display: block;
+    width: 100%;
+    max-height: 650px;
+    object-fit: contain;
+    border-radius: 14px;
+}
+
+.corporate-event-showcase-media img {
+    display: block;
+    width: 100%;
+    max-width: 220px;
+    height: auto;
+    margin: 0 auto;
+}
+
+.corporate-event-showcase-content {
+    max-width: 520px;
+}
+
+.corporate-event-showcase-content .eyebrow {
+    margin-bottom: 12px;
+}
+
+.corporate-event-showcase-content h2 {
+    margin: 0 0 20px;
+    font-size: 34px;
+    line-height: 1.2;
+    color: #222222;
+}
+
+.corporate-event-showcase-content p {
+    margin: 0 0 18px;
+    font-size: 16px;
+    line-height: 1.8;
+    color: #555555;
+}
+
+.corporate-event-showcase-content p:last-child {
+    margin-bottom: 0;
+}
 
 <!-- PRINT + DIGITAL -->
 
