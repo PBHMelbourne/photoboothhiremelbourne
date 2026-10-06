@@ -383,6 +383,13 @@
     color: #222222;
 }
 
+.corporate-360-copy h3 {
+    margin: 32px 0 12px;
+    font-size: 21px;
+    line-height: 1.3;
+    color: #222222;
+}
+
 .corporate-360-copy p {
     margin: 0 0 18px;
     font-size: 16px;
@@ -396,6 +403,7 @@
 
 .corporate-360-video {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
@@ -407,6 +415,17 @@
     max-height: 680px;
     object-fit: contain;
     border-radius: 14px;
+}
+
+.corporate-360-caption {
+    width: 100%;
+    max-width: 520px;
+    margin: 14px auto 0;
+    text-align: center;
+    font-size: 12px !important;
+    line-height: 1.6 !important;
+    color: #888888 !important;
+    font-style: italic;
 }
 
         /* TWO EVENT EXAMPLES */
@@ -592,11 +611,12 @@
             }
 
 
-            /* 360 VIDEO */
+ /* 360 VIDEO */
 
-            .corporate-video-feature video {
-                margin-top: 35px;
-            }
+.corporate-video-feature video {
+    margin-top: 35px;
+}
+
 .corporate-360-content {
     grid-template-columns: 1fr;
     gap: 40px;
@@ -611,9 +631,17 @@
     font-size: 28px;
 }
 
+.corporate-360-copy h3 {
+    font-size: 21px;
+}
+
 .corporate-360-video video {
     max-width: 330px;
     max-height: 520px;
+}
+
+.corporate-360-caption {
+    max-width: 330px;
 }
 
             /* CORPORATE EVENT GRID */
@@ -1179,15 +1207,39 @@
                 </h2>
 
                 <p>
-                    For corporate events looking for something more interactive,
-                    our 360 experience creates dynamic slow-motion videos that
-                    guests can share instantly.
+                    For corporate events looking for something beyond a traditional
+                    photo booth, our 360 experience creates a more immersive and
+                    engaging way for guests to capture the occasion.
                 </p>
 
                 <p>
-                    It works particularly well for awards nights, conferences,
-                    launches, staff celebrations and larger corporate events
-                    where you want an experience that draws people in.
+                    With dynamic video effects that move between smooth slow-motion
+                    and faster-paced sequences, the finished content has a polished,
+                    energetic feel that works particularly well for events where
+                    the experience itself is part of the entertainment.
+                </p>
+
+                <p>
+                    It can add another layer to awards nights, conferences, product
+                    launches, staff celebrations and larger corporate events —
+                    creating content that feels current, highly shareable and
+                    memorable long after the event has finished.
+                </p>
+
+                <h3>
+                    Branded 360 Videos
+                </h3>
+
+                <p>
+                    The experience can also be tailored to your event with branding
+                    incorporated into the finished videos, including logos, colors
+                    and other visual elements.
+                </p>
+
+                <p>
+                    This gives you the flexibility to create 360 content that feels
+                    aligned with the wider event, while giving guests something they
+                    can take away and share after the event.
                 </p>
 
             </div>
@@ -1202,6 +1254,11 @@
                     playsinline
                     preload="auto">
                 </video>
+
+                <p class="corporate-360-caption">
+                    Example shown: 360 video captured by Photo Booth Hire Melbourne
+                    with client-supplied event branding.
+                </p>
 
             </div>
 
