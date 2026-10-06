@@ -156,54 +156,97 @@
         }
 
 
-/* PRINT + DIGITAL */
+        /* PRINT + DIGITAL */
 
-.corporate-event-showcase,
-.corporate-event-showcase.reverse {
-    grid-template-columns: 1fr;
-    gap: 28px;
-    margin-top: 45px;
-}
+        .corporate-print-digital {
+            background: #fafafa;
+        }
 
-.corporate-event-showcase.reverse .corporate-event-showcase-media,
-.corporate-event-showcase.reverse .corporate-event-showcase-content {
-    order: initial;
-}
+        .corporate-event-showcase {
+            display: grid;
+            grid-template-columns: 1.05fr 0.9fr 0.65fr;
+            gap: 55px;
+            align-items: center;
+            margin-top: 75px;
+        }
 
-.corporate-event-showcase-media {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 14px;
-    width: 100%;
-    max-width: 240px;
-    margin: 0 auto;
-}
+        .corporate-event-showcase.reverse {
+            grid-template-columns: 0.65fr 0.9fr 1.05fr;
+        }
 
-.corporate-event-showcase-media video {
-    display: block;
-    width: 360px;
-    max-width: 100%;
-    max-height: 500px;
-    object-fit: contain;
-    border-radius: 14px;
-}
+        .corporate-event-showcase.reverse .corporate-event-showcase-media {
+            grid-column: 1;
+            grid-row: 1;
+        }
 
-.corporate-event-showcase-media img {
-    display: block;
-    width: 110px;
-    max-width: 110px;
-    height: auto;
-    margin: 0 auto;
-}
+        .corporate-event-showcase.reverse .corporate-event-showcase-content {
+            grid-column: 2;
+            grid-row: 1;
+        }
 
-.corporate-event-showcase-content {
-    max-width: none;
-}
+        .corporate-event-showcase.reverse .corporate-event-showcase-digital {
+            grid-column: 3;
+            grid-row: 1;
+        }
 
-.corporate-event-showcase-content h2 {
-    font-size: 28px;
-}
+        .corporate-event-showcase-media {
+            grid-column: 1;
+            grid-row: 1;
+        }
+
+        .corporate-event-showcase-content {
+            grid-column: 2;
+            grid-row: 1;
+            max-width: 430px;
+        }
+
+        .corporate-event-showcase-digital {
+            grid-column: 3;
+            grid-row: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .corporate-event-showcase-media video {
+            display: block;
+            width: 100%;
+            max-width: 430px;
+            max-height: 560px;
+            margin: 0 auto;
+            object-fit: contain;
+            border-radius: 14px;
+        }
+
+        .corporate-event-showcase-digital img {
+            display: block;
+            width: 150px;
+            max-width: 100%;
+            height: auto;
+        }
+
+        .corporate-event-showcase-content .eyebrow {
+            margin-bottom: 12px;
+        }
+
+        .corporate-event-showcase-content h2 {
+            margin: 0 0 20px;
+            font-size: 32px;
+            line-height: 1.2;
+            color: #222222;
+        }
+
+        .corporate-event-showcase-content p {
+            margin: 0 0 18px;
+            font-size: 16px;
+            line-height: 1.8;
+            color: #555555;
+        }
+
+        .corporate-event-showcase-content p:last-child {
+            margin-bottom: 0;
+        }
+
 
         /* 360 VIDEO */
 
@@ -309,34 +352,56 @@
 
             .corporate-event-showcase,
             .corporate-event-showcase.reverse {
-                grid-template-columns: 1fr;
+                display: flex;
+                flex-direction: column;
                 gap: 30px;
                 margin-top: 50px;
             }
 
-            .corporate-event-showcase.reverse .corporate-event-showcase-media,
-            .corporate-event-showcase.reverse .corporate-event-showcase-content {
-                order: initial;
+            .corporate-event-showcase-media,
+            .corporate-event-showcase-content,
+            .corporate-event-showcase-digital {
+                width: 100%;
+                max-width: none;
             }
 
             .corporate-event-showcase-media {
-                grid-template-columns: minmax(0, 1fr) 65px;
-                gap: 12px;
-                width: 100%;
-                max-width: 300px;
-                margin: 0 auto;
-            }
-
-            .corporate-event-showcase-media video {
-                max-height: 220px;
-            }
-
-            .corporate-event-showcase-media img {
-                max-width: 65px;
+                order: 1;
             }
 
             .corporate-event-showcase-content {
-                max-width: none;
+                order: 2;
+            }
+
+            .corporate-event-showcase-digital {
+                order: 3;
+            }
+
+            .corporate-event-showcase.reverse .corporate-event-showcase-media {
+                order: 1;
+            }
+
+            .corporate-event-showcase.reverse .corporate-event-showcase-content {
+                order: 2;
+            }
+
+            .corporate-event-showcase.reverse .corporate-event-showcase-digital {
+                order: 3;
+            }
+
+            .corporate-event-showcase-media video {
+                width: 100%;
+                max-width: 330px;
+                max-height: 430px;
+            }
+
+            .corporate-event-showcase-digital img {
+                width: 110px;
+            }
+
+            .corporate-event-showcase-content {
+                text-align: center;
+                margin: 0 auto;
             }
 
             .corporate-event-showcase-content h2 {
@@ -783,11 +848,6 @@
                     preload="auto">
                 </video>
 
-                <img
-                    src="rome-museums-victoria-branded-print-strip-melbourne.png"
-                    alt="Branded photo booth print strips from the ROME exhibition at Museums Victoria"
-                    loading="lazy">
-
             </div>
 
 
@@ -818,6 +878,16 @@
 
             </div>
 
+
+            <div class="corporate-event-showcase-digital">
+
+                <img
+                    src="rome-museums-victoria-branded-print-strip-melbourne.png"
+                    alt="Branded photo booth print strips from the ROME exhibition at Museums Victoria"
+                    loading="lazy">
+
+            </div>
+
         </div>
 
 
@@ -826,15 +896,6 @@
         <div class="corporate-event-showcase reverse">
 
             <div class="corporate-event-showcase-media">
-
-                <video
-                    src="mcg-network-branded-photo-booth-melbourne.mp4"
-                    autoplay
-                    loop
-                    muted
-                    playsinline
-                    preload="auto">
-                </video>
 
                 <img
                     src="mcg-network-branded-print-strip-melbourne.png"
@@ -869,6 +930,20 @@
                     and remember the event.
 
                 </p>
+
+            </div>
+
+
+            <div class="corporate-event-showcase-digital">
+
+                <video
+                    src="mcg-network-branded-photo-booth-melbourne.mp4"
+                    autoplay
+                    loop
+                    muted
+                    playsinline
+                    preload="auto">
+                </video>
 
             </div>
 
