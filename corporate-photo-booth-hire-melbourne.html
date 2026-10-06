@@ -419,72 +419,94 @@
 
         /* MOBILE */
 
-        @media (max-width: 800px) {
+@media (max-width: 800px) {
 
-            .corporate-feature {
-                padding: 70px 20px;
-            }
+    .corporate-feature {
+        padding: 70px 20px;
+    }
 
-            .corporate-feature-heading {
-                margin-bottom: 35px;
-            }
+    .corporate-feature-heading {
+        margin-bottom: 35px;
+    }
 
-            .corporate-feature-heading h2 {
-                font-size: 28px;
-            }
+    .corporate-feature-heading h2 {
+        font-size: 28px;
+    }
 
-            .corporate-main-image {
-                padding: 0 20px 70px;
-            }
+    .corporate-main-image {
+        padding: 0 20px 70px;
+    }
 
-            .corporate-showcase {
-                grid-template-columns: 1fr;
-                gap: 35px;
-            }
+    .corporate-showcase {
+        grid-template-columns: 1fr;
+        gap: 35px;
+    }
 
-            .corporate-showcase.reverse .corporate-showcase-image {
-                order: 1;
-            }
+    .corporate-showcase.reverse .corporate-showcase-image {
+        order: 1;
+    }
 
-            .corporate-showcase.reverse .corporate-showcase-content {
-                order: 2;
-            }
+    .corporate-showcase.reverse .corporate-showcase-content {
+        order: 2;
+    }
 
-            .corporate-showcase-content {
-                max-width: none;
-            }
+    .corporate-showcase-content {
+        max-width: none;
+    }
 
-            .corporate-showcase-content h2 {
-                font-size: 28px;
-            }
+    .corporate-showcase-content h2 {
+        font-size: 28px;
+    }
 
-            .print-digital-grid {
-                grid-template-columns: 1fr;
-                gap: 40px;
-            }
 
-            .print-digital-content {
-                order: 2;
-            }
+    /* PRINT + DIGITAL EVENT SHOWCASES */
 
-            .print-example:first-child {
-                order: 1;
-            }
+    .corporate-event-showcase,
+    .corporate-event-showcase.reverse {
+        grid-template-columns: 1fr;
+        gap: 35px;
+        margin-top: 55px;
+    }
 
-            .print-digital-video {
-                order: 3;
-            }
+    .corporate-event-showcase.reverse .corporate-event-showcase-media,
+    .corporate-event-showcase.reverse .corporate-event-showcase-content {
+        order: initial;
+    }
 
-            .corporate-event-grid {
-                grid-template-columns: 1fr;
-                gap: 22px;
-            }
+    .corporate-event-showcase-media {
+        grid-template-columns: minmax(0, 1.4fr) minmax(90px, 0.6fr);
+        gap: 18px;
+    }
 
-            .corporate-video-feature video {
-                margin-top: 35px;
-            }
+    .corporate-event-showcase-media video {
+        max-height: 550px;
+    }
 
-        }
+    .corporate-event-showcase-media img {
+        max-width: 180px;
+    }
+
+    .corporate-event-showcase-content {
+        max-width: none;
+    }
+
+    .corporate-event-showcase-content h2 {
+        font-size: 28px;
+    }
+
+
+    /* OTHER CORPORATE CONTENT */
+
+    .corporate-event-grid {
+        grid-template-columns: 1fr;
+        gap: 22px;
+    }
+
+    .corporate-video-feature video {
+        margin-top: 35px;
+    }
+
+}
 
     </style>
 
