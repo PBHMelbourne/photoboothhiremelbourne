@@ -102,27 +102,6 @@
         }
 
 
-        /* LARGE EVENT IMAGE */
-
-        .corporate-main-image {
-            padding: 0 20px 90px;
-            background: #ffffff;
-        }
-
-        .corporate-main-image-inner {
-            max-width: 1180px;
-            margin: 0 auto;
-        }
-
-        .corporate-main-image img {
-            display: block;
-            width: 100%;
-            height: auto;
-            border-radius: 14px;
-            box-shadow: 0 18px 45px rgba(0, 0, 0, 0.12);
-        }
-
-
         /* BRAND SHOWCASE */
 
         .corporate-showcase {
@@ -175,187 +154,82 @@
         .corporate-showcase-content p:last-child {
             margin-bottom: 0;
         }
-.corporate-event-showcase {
-    display: grid;
-    grid-template-columns: 1.1fr 0.9fr;
-    gap: 60px;
-    align-items: center;
-    margin-top: 75px;
-}
-
-.corporate-event-showcase.reverse {
-    grid-template-columns: 0.9fr 1.1fr;
-}
-
-.corporate-event-showcase.reverse .corporate-event-showcase-media {
-    order: 2;
-}
-
-.corporate-event-showcase.reverse .corporate-event-showcase-content {
-    order: 1;
-}
-
-.corporate-event-showcase-media {
-    display: grid;
-    grid-template-columns: minmax(0, 1.35fr) minmax(130px, 0.65fr);
-    gap: 24px;
-    align-items: center;
-}
-
-.corporate-event-showcase-media video {
-    display: block;
-    width: 100%;
-    max-height: 650px;
-    object-fit: contain;
-    border-radius: 14px;
-}
-
-.corporate-event-showcase-media img {
-    display: block;
-    width: 100%;
-    max-width: 220px;
-    height: auto;
-    margin: 0 auto;
-}
-
-.corporate-event-showcase-content {
-    max-width: 520px;
-}
-
-.corporate-event-showcase-content .eyebrow {
-    margin-bottom: 12px;
-}
-
-.corporate-event-showcase-content h2 {
-    margin: 0 0 20px;
-    font-size: 34px;
-    line-height: 1.2;
-    color: #222222;
-}
-
-.corporate-event-showcase-content p {
-    margin: 0 0 18px;
-    font-size: 16px;
-    line-height: 1.8;
-    color: #555555;
-}
-
-.corporate-event-showcase-content p:last-child {
-    margin-bottom: 0;
-}
-
-<!-- PRINT + DIGITAL -->
-
-<section class="corporate-feature corporate-print-digital">
-
-    <div class="corporate-feature-inner">
-
-        <div class="corporate-feature-heading">
-
-            <p class="eyebrow">PRINT + DIGITAL</p>
-
-            <h2>One Experience, Multiple Ways to Share</h2>
-
-            <p>
-                Corporate photo booth experiences can combine instant prints with
-                digital content, giving guests something physical to take away while
-                also creating photos, GIFs and other shareable content.
-            </p>
-
-        </div>
 
 
-        <!-- ROME / MUSEUMS VICTORIA -->
+        /* PRINT + DIGITAL */
 
-        <div class="corporate-event-showcase">
+        .corporate-print-digital {
+            background: #fafafa;
+        }
 
-            <div class="corporate-event-showcase-media">
+        .corporate-event-showcase {
+            display: grid;
+            grid-template-columns: 1.1fr 0.9fr;
+            gap: 60px;
+            align-items: center;
+            margin-top: 75px;
+        }
 
-                <video
-                    src="rome-museums-victoria-branded-photo-booth-melbourne.mp4"
-                    autoplay
-                    loop
-                    muted
-                    playsinline
-                    preload="auto">
-                </video>
+        .corporate-event-showcase.reverse {
+            grid-template-columns: 0.9fr 1.1fr;
+        }
 
-                <img
-                    src="rome-museums-victoria-branded-print-strip-melbourne.png"
-                    alt="Branded photo booth print strips from the ROME exhibition at Museums Victoria"
-                    loading="lazy">
+        .corporate-event-showcase.reverse .corporate-event-showcase-media {
+            order: 2;
+        }
 
-            </div>
+        .corporate-event-showcase.reverse .corporate-event-showcase-content {
+            order: 1;
+        }
 
-            <div class="corporate-event-showcase-content">
+        .corporate-event-showcase-media {
+            display: grid;
+            grid-template-columns: minmax(0, 1.35fr) minmax(120px, 0.65fr);
+            gap: 24px;
+            align-items: center;
+        }
 
-                <p class="eyebrow">ROME · MUSEUMS VICTORIA</p>
+        .corporate-event-showcase-media video {
+            display: block;
+            width: 100%;
+            max-height: 560px;
+            object-fit: contain;
+            border-radius: 14px;
+        }
 
-                <h2>Designed Into the Experience</h2>
+        .corporate-event-showcase-media img {
+            display: block;
+            width: 100%;
+            max-width: 200px;
+            height: auto;
+            margin: 0 auto;
+        }
 
-                <p>
-                    For the ROME exhibition at Museums Victoria, the photo experience
-                    was incorporated into an intricately branded environment, creating
-                    a cohesive experience that felt connected to the event.
-                </p>
+        .corporate-event-showcase-content {
+            max-width: 520px;
+        }
 
-                <p>
-                    The branding continued through to the content guests received,
-                    including the digital experience and custom print strips.
-                </p>
+        .corporate-event-showcase-content .eyebrow {
+            margin-bottom: 12px;
+        }
 
-            </div>
+        .corporate-event-showcase-content h2 {
+            margin: 0 0 20px;
+            font-size: 34px;
+            line-height: 1.2;
+            color: #222222;
+        }
 
-        </div>
+        .corporate-event-showcase-content p {
+            margin: 0 0 18px;
+            font-size: 16px;
+            line-height: 1.8;
+            color: #555555;
+        }
 
-
-        <!-- MCG NETWORK -->
-
-        <div class="corporate-event-showcase reverse">
-
-            <div class="corporate-event-showcase-media">
-
-                <video
-                    src="mcg-network-branded-photo-booth-melbourne.mp4"
-                    autoplay
-                    loop
-                    muted
-                    playsinline
-                    preload="auto">
-                </video>
-
-                <img
-                    src="mcg-network-branded-print-strip-melbourne.png"
-                    alt="Branded photo booth print strips from an MCG Network corporate event in Melbourne"
-                    loading="lazy">
-
-            </div>
-
-            <div class="corporate-event-showcase-content">
-
-                <p class="eyebrow">MCG NETWORK</p>
-
-                <h2>A Branded Experience From Start to Finish</h2>
-
-                <p>
-                    At an MCG Network corporate event, the photo experience carried
-                    the event branding through both the digital content and the
-                    physical prints guests could take away.
-                </p>
-
-                <p>
-                    Combining an engaging digital experience with professionally
-                    produced prints gives guests more than one way to interact with
-                    and remember the event.
-                </p>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
+        .corporate-event-showcase-content p:last-child {
+            margin-bottom: 0;
+        }
 
 
         /* 360 VIDEO */
@@ -419,88 +293,99 @@
 
         /* MOBILE */
 
-@media (max-width: 800px) {
+        @media (max-width: 800px) {
 
-    .corporate-feature {
-        padding: 70px 20px;
-    }
+            .corporate-feature {
+                padding: 70px 20px;
+            }
 
-    .corporate-feature-heading {
-        margin-bottom: 35px;
-    }
+            .corporate-feature-heading {
+                margin-bottom: 35px;
+            }
 
-    .corporate-feature-heading h2 {
-        font-size: 28px;
-    }
-
-    .corporate-main-image {
-        padding: 0 20px 70px;
-    }
-
-    .corporate-showcase {
-        grid-template-columns: 1fr;
-        gap: 35px;
-    }
-
-    .corporate-showcase.reverse .corporate-showcase-image {
-        order: 1;
-    }
-
-    .corporate-showcase.reverse .corporate-showcase-content {
-        order: 2;
-    }
-
-    .corporate-showcase-content {
-        max-width: none;
-    }
-
-    .corporate-showcase-content h2 {
-        font-size: 28px;
-    }
+            .corporate-feature-heading h2 {
+                font-size: 28px;
+            }
 
 
-    /* PRINT + DIGITAL EVENT SHOWCASES */
+            /* BRAND SHOWCASE */
 
-    .corporate-event-showcase,
-    .corporate-event-showcase.reverse {
-        grid-template-columns: 1fr;
-        gap: 35px;
-        margin-top: 55px;
-    }
+            .corporate-showcase {
+                grid-template-columns: 1fr;
+                gap: 35px;
+            }
 
-    .corporate-event-showcase.reverse .corporate-event-showcase-media,
-    .corporate-event-showcase.reverse .corporate-event-showcase-content {
-        order: initial;
-    }
-    
-.corporate-event-showcase-media {
-    grid-template-columns: minmax(0, 1fr) 80px;
-    gap: 12px;
-    max-width: 380px;
-    margin: 0 auto;
-}
+            .corporate-showcase.reverse .corporate-showcase-image {
+                order: 1;
+            }
 
-.corporate-event-showcase-media video {
-    max-height: 280px;
-}
+            .corporate-showcase.reverse .corporate-showcase-content {
+                order: 2;
+            }
 
-.corporate-event-showcase-media img {
-    max-width: 80px;
-}
+            .corporate-showcase-content {
+                max-width: none;
+            }
+
+            .corporate-showcase-content h2 {
+                font-size: 28px;
+            }
 
 
-    /* OTHER CORPORATE CONTENT */
+            /* PRINT + DIGITAL */
 
-    .corporate-event-grid {
-        grid-template-columns: 1fr;
-        gap: 22px;
-    }
+            .corporate-event-showcase,
+            .corporate-event-showcase.reverse {
+                grid-template-columns: 1fr;
+                gap: 30px;
+                margin-top: 50px;
+            }
 
-    .corporate-video-feature video {
-        margin-top: 35px;
-    }
+            .corporate-event-showcase.reverse .corporate-event-showcase-media,
+            .corporate-event-showcase.reverse .corporate-event-showcase-content {
+                order: initial;
+            }
 
-}
+            .corporate-event-showcase-media {
+                grid-template-columns: minmax(0, 1fr) 65px;
+                gap: 12px;
+                width: 100%;
+                max-width: 300px;
+                margin: 0 auto;
+            }
+
+            .corporate-event-showcase-media video {
+                max-height: 220px;
+            }
+
+            .corporate-event-showcase-media img {
+                max-width: 65px;
+            }
+
+            .corporate-event-showcase-content {
+                max-width: none;
+            }
+
+            .corporate-event-showcase-content h2 {
+                font-size: 28px;
+            }
+
+
+            /* 360 VIDEO */
+
+            .corporate-video-feature video {
+                margin-top: 35px;
+            }
+
+
+            /* CORPORATE EVENT GRID */
+
+            .corporate-event-grid {
+                grid-template-columns: 1fr;
+                gap: 22px;
+            }
+
+        }
 
     </style>
 
@@ -615,12 +500,13 @@
 
 <section class="hero">
 
-<div class="hero-image">
+    <div class="hero-image">
 
-    <img src="music-victoria-awards-corporate-photo-booth-melbourne.jpg"
-         alt="Photo booth at the Music Victoria Awards 2024 in Melbourne">
+        <img src="music-victoria-awards-corporate-photo-booth-melbourne.jpg"
+             alt="Photo booth at the Music Victoria Awards 2024 in Melbourne">
 
-</div>
+    </div>
+
 
     <div class="hero-content">
 
@@ -708,6 +594,8 @@
     </div>
 
 </section>
+
+
 
 <!-- CORPORATE EVENT TYPES -->
 
@@ -832,10 +720,11 @@
 
                 <video
                     src="rome-museums-victoria-branded-photo-booth-melbourne.mp4"
-                    controls
+                    autoplay
+                    loop
                     muted
                     playsinline
-                    preload="metadata">
+                    preload="auto">
                 </video>
 
             </div>
@@ -906,77 +795,109 @@
         </div>
 
 
-        <div class="print-digital-grid">
+        <!-- ROME / MUSEUMS VICTORIA -->
 
+        <div class="corporate-event-showcase">
 
-            <!-- ROME PRINTS -->
+            <div class="corporate-event-showcase-media">
 
-            <div class="print-example">
+                <video
+                    src="rome-museums-victoria-branded-photo-booth-melbourne.mp4"
+                    autoplay
+                    loop
+                    muted
+                    playsinline
+                    preload="auto">
+                </video>
 
                 <img
                     src="rome-museums-victoria-branded-print-strip-melbourne.png"
                     alt="Branded photo booth print strips from the ROME exhibition at Museums Victoria"
                     loading="lazy">
 
-                <p class="print-example-label">
-                    ROME · Museums Victoria
-                </p>
-
             </div>
 
 
-            <!-- TEXT -->
+            <div class="corporate-event-showcase-content">
 
-            <div class="print-digital-content">
+                <p class="eyebrow">
+                    ROME · MUSEUMS VICTORIA
+                </p>
 
                 <h2>
-                    From the Booth to the Guest
+                    Designed Into the Experience
                 </h2>
 
                 <p>
 
-                    Custom event artwork can be carried through the experience
-                    so the photos guests receive feel like part of the event.
-                    Whether that's an instant print, a digital photo or animated
-                    content, the result can be designed around your event's
-                    identity.
+                    For the ROME exhibition at Museums Victoria, the photo experience
+                    was incorporated into an intricately branded environment, creating
+                    a cohesive experience that felt connected to the event.
+
+                </p>
+
+                <p>
+
+                    The branding continued through to the content guests received,
+                    including the digital experience and custom print strips.
 
                 </p>
 
             </div>
 
+        </div>
 
-            <!-- DIGITAL CONTENT -->
 
-            <div class="print-digital-video">
+        <!-- MCG NETWORK -->
 
-<video
-    src="rome-museums-victoria-branded-photo-booth-melbourne.mp4"
-    autoplay
-    loop
-    muted
-    playsinline
-    preload="auto">
-</video>
+        <div class="corporate-event-showcase reverse">
+
+            <div class="corporate-event-showcase-media">
+
+                <video
+                    src="mcg-network-branded-photo-booth-melbourne.mp4"
+                    autoplay
+                    loop
+                    muted
+                    playsinline
+                    preload="auto">
+                </video>
+
+                <img
+                    src="mcg-network-branded-print-strip-melbourne.png"
+                    alt="Branded photo booth print strips from an MCG Network corporate event in Melbourne"
+                    loading="lazy">
 
             </div>
 
 
-        </div>
+            <div class="corporate-event-showcase-content">
 
+                <p class="eyebrow">
+                    MCG NETWORK
+                </p>
 
-        <!-- MCG PRINTS -->
+                <h2>
+                    A Branded Experience From Start to Finish
+                </h2>
 
-        <div class="print-example" style="margin-top: 55px;">
+                <p>
 
-            <img
-                src="mcg-network-branded-print-strip-melbourne.png"
-                alt="Branded photo booth print strips from an MCG Network corporate event in Melbourne"
-                loading="lazy">
+                    At an MCG Network corporate event, the photo experience carried
+                    the event branding through both the digital content and the
+                    physical prints guests could take away.
 
-            <p class="print-example-label">
-                MCG Network
-            </p>
+                </p>
+
+                <p>
+
+                    Combining an engaging digital experience with professionally
+                    produced prints gives guests more than one way to interact with
+                    and remember the event.
+
+                </p>
+
+            </div>
 
         </div>
 
@@ -1012,14 +933,14 @@
             </p>
 
 
-<video
-    src="cannabiz-awards-360-booth-melbourne.mp4"
-    autoplay
-    loop
-    muted
-    playsinline
-    preload="auto">
-</video>
+            <video
+                src="cannabiz-awards-360-booth-melbourne.mp4"
+                autoplay
+                loop
+                muted
+                playsinline
+                preload="auto">
+            </video>
 
         </div>
 
@@ -1039,14 +960,14 @@
 
             <div class="corporate-showcase-image">
 
-<video
-    src="harvest-snaps-calbee-digital-photo-booth-melbourne.mp4"
-    autoplay
-    loop
-    muted
-    playsinline
-    preload="auto">
-</video>
+                <video
+                    src="harvest-snaps-calbee-digital-photo-booth-melbourne.mp4"
+                    autoplay
+                    loop
+                    muted
+                    playsinline
+                    preload="auto">
+                </video>
 
             </div>
 
@@ -1126,14 +1047,14 @@
 
             <div class="corporate-event-card">
 
-<video
-    src="deloitte-gala-photo-booth-melbourne.mp4"
-    autoplay
-    loop
-    muted
-    playsinline
-    preload="auto">
-</video>
+                <video
+                    src="deloitte-gala-photo-booth-melbourne.mp4"
+                    autoplay
+                    loop
+                    muted
+                    playsinline
+                    preload="auto">
+                </video>
 
                 <div class="corporate-event-card-content">
 
@@ -1159,14 +1080,14 @@
 
             <div class="corporate-event-card">
 
-<video
-    src="guzman-y-gomez-managers-summit-photo-booth-melbourne.mp4"
-    autoplay
-    loop
-    muted
-    playsinline
-    preload="auto">
-</video>
+                <video
+                    src="guzman-y-gomez-managers-summit-photo-booth-melbourne.mp4"
+                    autoplay
+                    loop
+                    muted
+                    playsinline
+                    preload="auto">
+                </video>
 
                 <div class="corporate-event-card-content">
 
@@ -1205,14 +1126,14 @@
 
             <div class="corporate-showcase-image">
 
-<video
-    src="port-of-melbourne-end-of-year-photo-booth-melbourne.mp4"
-    autoplay
-    loop
-    muted
-    playsinline
-    preload="auto">
-</video>
+                <video
+                    src="port-of-melbourne-end-of-year-photo-booth-melbourne.mp4"
+                    autoplay
+                    loop
+                    muted
+                    playsinline
+                    preload="auto">
+                </video>
 
             </div>
 
