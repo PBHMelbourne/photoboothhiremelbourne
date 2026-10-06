@@ -156,83 +156,118 @@
         }
 
 
-/* PRINT + DIGITAL */
+        /* BRANDED CORPORATE EXPERIENCES */
 
-.corporate-print-digital {
-    background: #fafafa;
-}
+        .corporate-branded-placeholder {
+            width: 100%;
+            min-height: 520px;
+            background: #f7f7f7;
+            border-radius: 14px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 40px;
+            box-sizing: border-box;
+        }
 
-.corporate-event-showcase {
-    display: grid;
-    grid-template-columns: 400px 1fr 280px;
-    gap: 55px;
-    align-items: center;
-    margin-top: 75px;
-}
 
-.corporate-event-showcase.reverse {
-    grid-template-columns: 280px 1fr 400px;
-}
+        /* PRINT + DIGITAL */
 
-/* VIDEO */
+        .corporate-print-digital {
+            background: #fafafa;
+        }
 
-.corporate-event-showcase-media {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+        .corporate-event-showcase {
+            display: grid;
+            grid-template-columns: 400px 1fr 280px;
+            gap: 55px;
+            align-items: center;
+            margin-top: 75px;
+        }
 
-.corporate-event-showcase-media video {
-    display: block;
-    width: 400px;
-    max-width: 100%;
-    height: 533px;
-    object-fit: contain;
-    border-radius: 14px;
-}
+        .corporate-event-showcase.reverse {
+            grid-template-columns: 280px 1fr 400px;
+        }
 
-/* TEXT */
 
-.corporate-event-showcase-content {
-    max-width: 360px;
-}
+        /* MEDIA */
 
-.corporate-event-showcase-content .eyebrow {
-    margin-bottom: 12px;
-}
+        .corporate-event-showcase-media {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
 
-.corporate-event-showcase-content h2 {
-    margin: 0 0 20px;
-    font-size: 32px;
-    line-height: 1.2;
-    color: #222222;
-}
+        .corporate-event-showcase-media video {
+            display: block;
+            width: 400px;
+            max-width: 100%;
+            height: 533px;
+            object-fit: contain;
+            border-radius: 14px;
+        }
 
-.corporate-event-showcase-content p {
-    margin: 0 0 18px;
-    font-size: 16px;
-    line-height: 1.8;
-    color: #555555;
-}
 
-.corporate-event-showcase-content p:last-child {
-    margin-bottom: 0;
-}
+        /* PRINT STRIPS */
 
-/* PRINT STRIPS */
+        .corporate-event-showcase-media img,
+        .corporate-event-showcase-digital img {
+            display: block;
+            width: 260px;
+            height: 260px;
+            max-width: 100%;
+            object-fit: contain;
+            margin: 0 auto;
+        }
 
-.corporate-event-showcase-digital {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
-.corporate-event-showcase-digital img {
-    display: block;
-    width: 260px;
-    height: 260px;
-    object-fit: contain;
-}
+        /* DIGITAL VIDEO */
+
+        .corporate-event-showcase-digital {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .corporate-event-showcase-digital video {
+            display: block;
+            width: 400px;
+            max-width: 100%;
+            height: 533px;
+            object-fit: contain;
+            border-radius: 14px;
+        }
+
+
+        /* SHOWCASE TEXT */
+
+        .corporate-event-showcase-content {
+            max-width: 360px;
+        }
+
+        .corporate-event-showcase-content .eyebrow {
+            margin-bottom: 12px;
+        }
+
+        .corporate-event-showcase-content h2 {
+            margin: 0 0 20px;
+            font-size: 32px;
+            line-height: 1.2;
+            color: #222222;
+        }
+
+        .corporate-event-showcase-content p {
+            margin: 0 0 18px;
+            font-size: 16px;
+            line-height: 1.8;
+            color: #555555;
+        }
+
+        .corporate-event-showcase-content p:last-child {
+            margin-bottom: 0;
+        }
+
 
         /* 360 VIDEO */
 
@@ -248,6 +283,7 @@
             margin: 45px auto 0;
             border-radius: 14px;
         }
+
 
         /* TWO EVENT EXAMPLES */
 
@@ -333,73 +369,73 @@
             }
 
 
-/* PRINT + DIGITAL */
+            /* BRANDED CORPORATE EXPERIENCES */
 
-.corporate-event-showcase,
-.corporate-event-showcase.reverse {
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-    margin-top: 50px;
-}
+            .corporate-branded-placeholder {
+                min-height: 320px;
+            }
 
-.corporate-event-showcase-media,
-.corporate-event-showcase-content,
-.corporate-event-showcase-digital {
-    width: 100%;
-    max-width: none;
-}
 
-.corporate-event-showcase-media {
-    order: 1;
-}
+            /* PRINT + DIGITAL */
 
-.corporate-event-showcase-content {
-    order: 2;
-}
+            .corporate-event-showcase,
+            .corporate-event-showcase.reverse {
+                display: flex;
+                flex-direction: column;
+                gap: 30px;
+                margin-top: 50px;
+            }
 
-.corporate-event-showcase-digital {
-    order: 3;
-}
+            .corporate-event-showcase-media,
+            .corporate-event-showcase-content,
+            .corporate-event-showcase-digital {
+                width: 100%;
+                max-width: none;
+            }
 
-.corporate-event-showcase.reverse .corporate-event-showcase-media {
-    order: 1;
-}
+            .corporate-event-showcase-media {
+                order: 1;
+            }
 
-.corporate-event-showcase.reverse .corporate-event-showcase-content {
-    order: 2;
-}
+            .corporate-event-showcase-content {
+                order: 2;
+            }
 
-.corporate-event-showcase.reverse .corporate-event-showcase-digital {
-    order: 3;
-}
+            .corporate-event-showcase-digital {
+                order: 3;
+            }
 
-.corporate-event-showcase-media video {
-    width: 100%;
-    max-width: 330px;
-    height: auto;
-    max-height: 440px;
-}
+            .corporate-event-showcase-media video,
+            .corporate-event-showcase-digital video {
+                width: 100%;
+                max-width: 330px;
+                height: auto;
+                max-height: 440px;
+            }
 
-.corporate-event-showcase-digital img {
-    width: 180px;
-    height: 180px;
-}
+            .corporate-event-showcase-media img,
+            .corporate-event-showcase-digital img {
+                width: 180px;
+                height: 180px;
+                max-width: 100%;
+            }
 
-.corporate-event-showcase-content {
-    text-align: center;
-    margin: 0 auto;
-}
+            .corporate-event-showcase-content {
+                text-align: center;
+                margin: 0 auto;
+            }
 
-.corporate-event-showcase-content h2 {
-    font-size: 28px;
-}
+            .corporate-event-showcase-content h2 {
+                font-size: 28px;
+            }
+
 
             /* 360 VIDEO */
 
             .corporate-video-feature video {
                 margin-top: 35px;
             }
+
 
             /* CORPORATE EVENT GRID */
 
@@ -731,7 +767,7 @@
 
 
 
-<!-- ROME / MUSEUMS VICTORIA -->
+<!-- BRANDED CORPORATE EXPERIENCES -->
 
 <section class="corporate-feature">
 
@@ -739,16 +775,11 @@
 
         <div class="corporate-showcase">
 
-            <div class="corporate-showcase-image">
+            <div class="corporate-branded-placeholder">
 
-                <video
-                    src="rome-museums-victoria-branded-photo-booth-melbourne.mp4"
-                    autoplay
-                    loop
-                    muted
-                    playsinline
-                    preload="auto">
-                </video>
+                <p>
+                    Replacement corporate event image
+                </p>
 
             </div>
 
@@ -766,18 +797,17 @@
                 <p>
 
                     A photo booth can become part of a much bigger event experience.
-                    For the ROME exhibition at Museums Victoria, the photo experience
-                    was incorporated into an intricately branded environment, creating
-                    something that felt connected to the event rather than separate
-                    from it.
+                    Client-supplied artwork can be incorporated across the photo
+                    experience, from the visual environment through to the content
+                    guests receive.
 
                 </p>
 
                 <p>
 
-                    Client-supplied artwork can be incorporated across the photo
-                    experience, from the visual environment through to the content
-                    guests receive.
+                    The result can feel connected to the event rather than
+                    separate from it, whether you're running a corporate
+                    celebration, conference, launch or larger brand experience.
 
                 </p>
 
