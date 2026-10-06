@@ -66,6 +66,314 @@
     }
     </script>
 
+
+    <!-- CORPORATE PAGE STYLES -->
+
+    <style>
+
+        .corporate-feature {
+            padding: 90px 20px;
+            background: #ffffff;
+        }
+
+        .corporate-feature-inner {
+            max-width: 1180px;
+            margin: 0 auto;
+        }
+
+        .corporate-feature-heading {
+            max-width: 760px;
+            margin: 0 auto 45px;
+            text-align: center;
+        }
+
+        .corporate-feature-heading h2 {
+            margin: 0 0 18px;
+            font-size: 34px;
+            line-height: 1.2;
+            color: #222222;
+        }
+
+        .corporate-feature-heading p {
+            margin: 0;
+            font-size: 16px;
+            line-height: 1.75;
+            color: #555555;
+        }
+
+
+        /* LARGE EVENT IMAGE */
+
+        .corporate-main-image {
+            padding: 0 20px 90px;
+            background: #ffffff;
+        }
+
+        .corporate-main-image-inner {
+            max-width: 1180px;
+            margin: 0 auto;
+        }
+
+        .corporate-main-image img {
+            display: block;
+            width: 100%;
+            height: auto;
+            border-radius: 14px;
+            box-shadow: 0 18px 45px rgba(0, 0, 0, 0.12);
+        }
+
+
+        /* BRAND SHOWCASE */
+
+        .corporate-showcase {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 55px;
+            align-items: center;
+        }
+
+        .corporate-showcase.reverse .corporate-showcase-image {
+            order: 2;
+        }
+
+        .corporate-showcase.reverse .corporate-showcase-content {
+            order: 1;
+        }
+
+        .corporate-showcase-image img,
+        .corporate-showcase-image video {
+            display: block;
+            width: 100%;
+            height: auto;
+            max-height: 700px;
+            object-fit: cover;
+            border-radius: 14px;
+        }
+
+        .corporate-showcase-content {
+            max-width: 540px;
+        }
+
+        .corporate-showcase-content .eyebrow {
+            margin-bottom: 12px;
+        }
+
+        .corporate-showcase-content h2 {
+            margin: 0 0 20px;
+            font-size: 34px;
+            line-height: 1.2;
+            color: #222222;
+        }
+
+        .corporate-showcase-content p {
+            margin: 0 0 18px;
+            font-size: 16px;
+            line-height: 1.8;
+            color: #555555;
+        }
+
+        .corporate-showcase-content p:last-child {
+            margin-bottom: 0;
+        }
+
+
+        /* PRINT + DIGITAL */
+
+        .corporate-print-digital {
+            background: #fafafa;
+        }
+
+        .print-digital-grid {
+            display: grid;
+            grid-template-columns: minmax(0, 0.85fr) minmax(280px, 0.95fr) minmax(0, 0.85fr);
+            gap: 40px;
+            align-items: center;
+        }
+
+        .print-example {
+            text-align: center;
+        }
+
+        .print-example img {
+            display: block;
+            width: 100%;
+            max-width: 360px;
+            height: auto;
+            margin: 0 auto;
+        }
+
+        .print-example-label {
+            margin: 18px 0 0;
+            font-size: 12px;
+            font-weight: 700;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            color: #888888;
+        }
+
+        .print-digital-content {
+            text-align: center;
+        }
+
+        .print-digital-content h2 {
+            margin: 0 0 18px;
+            font-size: 32px;
+            line-height: 1.2;
+            color: #222222;
+        }
+
+        .print-digital-content p {
+            margin: 0;
+            font-size: 15px;
+            line-height: 1.8;
+            color: #555555;
+        }
+
+        .print-digital-video {
+            display: flex;
+            justify-content: center;
+        }
+
+        .print-digital-video video {
+            display: block;
+            width: 100%;
+            max-width: 330px;
+            max-height: 550px;
+            object-fit: contain;
+            border-radius: 14px;
+        }
+
+
+        /* 360 VIDEO */
+
+        .corporate-video-feature {
+            text-align: center;
+        }
+
+        .corporate-video-feature video {
+            display: block;
+            width: 100%;
+            max-width: 760px;
+            max-height: 680px;
+            margin: 45px auto 0;
+            border-radius: 14px;
+        }
+
+
+        /* TWO EVENT EXAMPLES */
+
+        .corporate-event-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+        }
+
+        .corporate-event-card {
+            background: #ffffff;
+            border: 1px solid #eeeeee;
+            border-radius: 14px;
+            overflow: hidden;
+        }
+
+        .corporate-event-card video {
+            display: block;
+            width: 100%;
+            height: auto;
+            max-height: 620px;
+            object-fit: contain;
+            background: #f5f5f5;
+        }
+
+        .corporate-event-card-content {
+            padding: 28px 30px 32px;
+        }
+
+        .corporate-event-card-content h3 {
+            margin: 0 0 12px;
+            font-size: 21px;
+            line-height: 1.3;
+            color: #222222;
+        }
+
+        .corporate-event-card-content p {
+            margin: 0;
+            font-size: 15px;
+            line-height: 1.75;
+            color: #555555;
+        }
+
+
+        /* MOBILE */
+
+        @media (max-width: 800px) {
+
+            .corporate-feature {
+                padding: 70px 20px;
+            }
+
+            .corporate-feature-heading {
+                margin-bottom: 35px;
+            }
+
+            .corporate-feature-heading h2 {
+                font-size: 28px;
+            }
+
+            .corporate-main-image {
+                padding: 0 20px 70px;
+            }
+
+            .corporate-showcase {
+                grid-template-columns: 1fr;
+                gap: 35px;
+            }
+
+            .corporate-showcase.reverse .corporate-showcase-image {
+                order: 1;
+            }
+
+            .corporate-showcase.reverse .corporate-showcase-content {
+                order: 2;
+            }
+
+            .corporate-showcase-content {
+                max-width: none;
+            }
+
+            .corporate-showcase-content h2 {
+                font-size: 28px;
+            }
+
+            .print-digital-grid {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+
+            .print-digital-content {
+                order: 2;
+            }
+
+            .print-example:first-child {
+                order: 1;
+            }
+
+            .print-digital-video {
+                order: 3;
+            }
+
+            .corporate-event-grid {
+                grid-template-columns: 1fr;
+                gap: 22px;
+            }
+
+            .corporate-video-feature video {
+                margin-top: 35px;
+            }
+
+        }
+
+    </style>
+
 </head>
 
 
@@ -77,7 +385,6 @@
 <header class="site-header">
 
     <div class="header-inner">
-
 
         <a href="./"
            class="logo-link"
@@ -92,18 +399,15 @@
 
         <nav class="main-nav">
 
-
             <a href="./"
                aria-label="Photo Booth Hire Melbourne home">
                 Home
             </a>
 
-
             <a href="./#about"
                aria-label="About Photo Booth Hire Melbourne">
                 About Us
             </a>
-
 
             <a href="./#booths"
                aria-label="Melbourne photo booths">
@@ -117,7 +421,8 @@
 
                 <button type="button"
                         class="nav-dropdown-toggle"
-                        aria-haspopup="true">
+                        aria-haspopup="true"
+                        aria-expanded="false">
 
                     Events
 
@@ -128,26 +433,21 @@
 
                 <div class="nav-dropdown-menu">
 
-
                     <a href="corporate-photo-booth-hire-melbourne.html">
                         Corporate Events
                     </a>
-
 
                     <a href="experiential-brand-activation-photo-booth-hire-melbourne.html">
                         Experiential &amp; Brand Activations
                     </a>
 
-
                     <a href="wedding-photo-booth-hire-melbourne.html">
                         Weddings
                     </a>
 
-
                     <a href="party-photo-booth-hire-melbourne.html">
                         Parties &amp; Celebrations
                     </a>
-
 
                 </div>
 
@@ -170,7 +470,6 @@
 
             </a>
 
-
         </nav>
 
     </div>
@@ -186,7 +485,6 @@
 
 <section class="hero">
 
-
     <div class="hero-image">
 
         <img src="corporate-photo-booth-hire-melbourne-digital-sharing.jpg"
@@ -197,16 +495,13 @@
 
     <div class="hero-content">
 
-
         <p class="eyebrow">
             CORPORATE EVENTS
         </p>
 
-
         <h1>
             Corporate Photo Booth Hire Melbourne
         </h1>
-
 
         <p class="hero-tagline">
 
@@ -216,7 +511,6 @@
 
         </p>
 
-
         <a href="#contact"
            class="button"
            aria-label="Enquire about corporate photo booth hire in Melbourne">
@@ -225,9 +519,7 @@
 
         </a>
 
-
     </div>
-
 
 </section>
 
@@ -237,25 +529,20 @@
 
 <section class="about-section">
 
-
     <div class="section-heading">
-
 
         <p class="eyebrow">
             CORPORATE PHOTO BOOTH HIRE
         </p>
 
-
         <h2>
             Photo Booth Hire for Corporate Events in Melbourne
         </h2>
-
 
     </div>
 
 
     <div class="about-content">
-
 
         <p>
 
@@ -268,15 +555,17 @@
         </p>
 
 
-<p>
-    Choose from
-    <a href="./#booths">professional DSLR photography</a>,
-    instant prints, digital experiences, roaming photography and 360° video,
-    with options to suit your event, venue, audience and the way you want
-    guests to interact with the experience. Custom branding is available
-    across our corporate photo booth experiences, including event artwork,
-    print designs and digital sharing.
-</p>
+        <p>
+
+            Choose from
+            <a href="./#booths">professional DSLR photography</a>,
+            instant prints, digital experiences, roaming photography and 360° video,
+            with options to suit your event, venue, audience and the way you want
+            guests to interact with the experience. Custom branding is available
+            across our corporate photo booth experiences, including event artwork,
+            print designs and digital sharing.
+
+        </p>
 
 
         <p>
@@ -287,9 +576,24 @@
 
         </p>
 
-
     </div>
 
+</section>
+
+
+
+<!-- MUSIC VICTORIA -->
+
+<section class="corporate-main-image">
+
+    <div class="corporate-main-image-inner">
+
+        <img
+            src="music-victoria-awards-corporate-photo-booth-melbourne.jpg"
+            alt="Photo booth at the Music Victoria Awards 2024 in Melbourne"
+            loading="lazy">
+
+    </div>
 
 </section>
 
@@ -299,19 +603,15 @@
 
 <section class="booths-section">
 
-
     <div class="section-heading">
-
 
         <p class="eyebrow">
             CORPORATE PHOTO BOOTH EVENTS
         </p>
 
-
         <h2>
             Photo Booth Hire for Every Corporate Occasion
         </h2>
-
 
         <p>
 
@@ -321,9 +621,7 @@
 
         </p>
 
-
     </div>
-
 
 
     <div class="features">
@@ -333,16 +631,13 @@
 
         <div class="feature">
 
-
             <span class="feature-number">
                 01
             </span>
 
-
             <h3>
                 Corporate Parties &amp; Functions
             </h3>
-
 
             <p>
 
@@ -354,25 +649,20 @@
 
             </p>
 
-
         </div>
-
 
 
         <!-- CONFERENCES -->
 
         <div class="feature">
 
-
             <span class="feature-number">
                 02
             </span>
 
-
             <h3>
                 Conferences &amp; Networking Events
             </h3>
-
 
             <p>
 
@@ -383,43 +673,467 @@
 
             </p>
 
-
         </div>
-
 
 
         <!-- PRODUCT LAUNCHES -->
 
         <div class="feature">
 
-
             <span class="feature-number">
                 03
             </span>
-
 
             <h3>
                 Product Launches &amp; Brand Events
             </h3>
 
+            <p>
 
-<p>
-    Create a photo experience that complements your product launch,
-    brand event or corporate campaign. Custom artwork, branded
-    prints and digital sharing can be incorporated to create an
-    experience that feels connected to your event. For larger
-    campaigns and more tailored activations, explore our
-    <a href="experiential-brand-activation-photo-booth-hire-melbourne.html">
-        experiential and brand activation photo booth experiences
-    </a>.
-</p>
+                Create a photo experience that complements your product launch,
+                brand event or corporate campaign. Custom artwork, branded
+                prints and digital sharing can be incorporated to create an
+                experience that feels connected to your event. For larger
+                campaigns and more tailored activations, explore our
+                <a href="experiential-brand-activation-photo-booth-hire-melbourne.html">
+                    experiential and brand activation photo booth experiences
+                </a>.
 
+            </p>
 
         </div>
 
 
     </div>
 
+</section>
+
+
+
+<!-- ROME / MUSEUMS VICTORIA -->
+
+<section class="corporate-feature">
+
+    <div class="corporate-feature-inner">
+
+        <div class="corporate-showcase">
+
+            <div class="corporate-showcase-image">
+
+                <video
+                    src="rome-museums-victoria-branded-photo-booth-melbourne.mp4"
+                    controls
+                    muted
+                    playsinline
+                    preload="metadata">
+                </video>
+
+            </div>
+
+
+            <div class="corporate-showcase-content">
+
+                <p class="eyebrow">
+                    BRANDED CORPORATE EXPERIENCES
+                </p>
+
+                <h2>
+                    Built Around the Event
+                </h2>
+
+                <p>
+
+                    A photo booth can become part of a much bigger event experience.
+                    For the ROME exhibition at Museums Victoria, the photo experience
+                    was incorporated into an intricately branded environment, creating
+                    something that felt connected to the event rather than separate
+                    from it.
+
+                </p>
+
+                <p>
+
+                    Client-supplied artwork can be incorporated across the photo
+                    experience, from the visual environment through to the content
+                    guests receive.
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- PRINT + DIGITAL -->
+
+<section class="corporate-feature corporate-print-digital">
+
+    <div class="corporate-feature-inner">
+
+        <div class="corporate-feature-heading">
+
+            <p class="eyebrow">
+                PRINT + DIGITAL
+            </p>
+
+            <h2>
+                One Experience, Multiple Ways to Share
+            </h2>
+
+            <p>
+
+                Corporate photo booth experiences can combine instant prints with
+                digital content, giving guests something physical to take away while
+                also creating photos, GIFs and other shareable content.
+
+            </p>
+
+        </div>
+
+
+        <div class="print-digital-grid">
+
+
+            <!-- ROME PRINTS -->
+
+            <div class="print-example">
+
+                <img
+                    src="rome-museums-victoria-branded-print-strip-melbourne.png"
+                    alt="Branded photo booth print strips from the ROME exhibition at Museums Victoria"
+                    loading="lazy">
+
+                <p class="print-example-label">
+                    ROME · Museums Victoria
+                </p>
+
+            </div>
+
+
+            <!-- TEXT -->
+
+            <div class="print-digital-content">
+
+                <h2>
+                    From the Booth to the Guest
+                </h2>
+
+                <p>
+
+                    Custom event artwork can be carried through the experience
+                    so the photos guests receive feel like part of the event.
+                    Whether that's an instant print, a digital photo or animated
+                    content, the result can be designed around your event's
+                    identity.
+
+                </p>
+
+            </div>
+
+
+            <!-- DIGITAL CONTENT -->
+
+            <div class="print-digital-video">
+
+                <video
+                    src="rome-museums-victoria-branded-photo-booth-melbourne.mp4"
+                    controls
+                    muted
+                    playsinline
+                    preload="metadata">
+                </video>
+
+            </div>
+
+
+        </div>
+
+
+        <!-- MCG PRINTS -->
+
+        <div class="print-example" style="margin-top: 55px;">
+
+            <img
+                src="mcg-network-branded-print-strip-melbourne.png"
+                alt="Branded photo booth print strips from an MCG Network corporate event in Melbourne"
+                loading="lazy">
+
+            <p class="print-example-label">
+                MCG Network
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- 360 EXPERIENCE -->
+
+<section class="corporate-feature">
+
+    <div class="corporate-feature-inner">
+
+        <div class="corporate-video-feature">
+
+            <p class="eyebrow">
+                360 PHOTO BOOTH
+            </p>
+
+            <h2>
+                A Corporate Event Can Be More Than a Traditional Photo Booth
+            </h2>
+
+            <p>
+
+                For events looking for something more immersive, a 360 booth
+                creates an interactive video experience guests can step into
+                together. It's another way to add movement, energy and shareable
+                content to a corporate event.
+
+            </p>
+
+
+            <video
+                src="cannabiz-awards-360-booth-melbourne.mp4"
+                controls
+                muted
+                playsinline
+                preload="metadata">
+            </video>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- HARVEST SNAPS / CALBEE -->
+
+<section class="corporate-feature">
+
+    <div class="corporate-feature-inner">
+
+        <div class="corporate-showcase reverse">
+
+            <div class="corporate-showcase-image">
+
+                <video
+                    src="harvest-snaps-calbee-digital-photo-booth-melbourne.mp4"
+                    controls
+                    muted
+                    playsinline
+                    preload="metadata">
+                </video>
+
+            </div>
+
+
+            <div class="corporate-showcase-content">
+
+                <p class="eyebrow">
+                    DIGITAL EXPERIENCES
+                </p>
+
+                <h2>
+                    Interactive Experiences That Go Beyond the Booth
+                </h2>
+
+                <p>
+
+                    Corporate activations can incorporate digital experiences
+                    that change the way guests interact with their photos.
+                    Harvest Snaps / Calbee Australia used digital background
+                    removal as part of the experience, creating content that
+                    could be customized around the activation.
+
+                </p>
+
+                <p>
+
+                    For campaigns that require more tailored interaction,
+                    branding, data collection or custom technology, our
+                    <a href="experiential-brand-activation-photo-booth-hire-melbourne.html">
+                        experiential and brand activation services
+                    </a>
+                    can be built around the campaign.
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- CORPORATE EVENT EXAMPLES -->
+
+<section class="corporate-feature" style="background:#fafafa;">
+
+    <div class="corporate-feature-inner">
+
+        <div class="corporate-feature-heading">
+
+            <p class="eyebrow">
+                RECENT CORPORATE EVENTS
+            </p>
+
+            <h2>
+                From Formal Galas to Themed Events
+            </h2>
+
+            <p>
+
+                Corporate events come in all shapes and sizes. These examples
+                show how the photo booth experience can be adapted to the
+                atmosphere, branding and style of the event.
+
+            </p>
+
+        </div>
+
+
+        <div class="corporate-event-grid">
+
+
+            <!-- DELOITTE -->
+
+            <div class="corporate-event-card">
+
+                <video
+                    src="deloitte-gala-photo-booth-melbourne.mp4"
+                    controls
+                    muted
+                    playsinline
+                    preload="metadata">
+                </video>
+
+                <div class="corporate-event-card-content">
+
+                    <h3>
+                        Deloitte Gala
+                    </h3>
+
+                    <p>
+
+                        A polished event environment where professional
+                        photography and a well-presented photo booth can
+                        become part of the evening without taking away from
+                        the occasion.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- GYG -->
+
+            <div class="corporate-event-card">
+
+                <video
+                    src="guzman-y-gomez-managers-summit-photo-booth-melbourne.mp4"
+                    controls
+                    muted
+                    playsinline
+                    preload="metadata">
+                </video>
+
+                <div class="corporate-event-card-content">
+
+                    <h3>
+                        Guzman y Gomez Managers Summit
+                    </h3>
+
+                    <p>
+
+                        A more energetic, themed corporate event showing how
+                        the photo experience can be adapted to suit the
+                        personality and atmosphere of the occasion.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- PORT OF MELBOURNE -->
+
+<section class="corporate-feature">
+
+    <div class="corporate-feature-inner">
+
+        <div class="corporate-showcase">
+
+            <div class="corporate-showcase-image">
+
+                <video
+                    src="port-of-melbourne-end-of-year-photo-booth-melbourne.mp4"
+                    controls
+                    muted
+                    playsinline
+                    preload="metadata">
+                </video>
+
+            </div>
+
+
+            <div class="corporate-showcase-content">
+
+                <p class="eyebrow">
+                    END-OF-YEAR EVENTS
+                </p>
+
+                <h2>
+                    Corporate Celebrations Can Still Have Personality
+                </h2>
+
+                <p>
+
+                    End-of-year celebrations don't have to feel formal. The
+                    Port of Melbourne event combined a corporate setting with
+                    a tropical theme, showing how branding, styling and the
+                    photo experience can work together to create something
+                    more relaxed and memorable.
+
+                </p>
+
+                <p>
+
+                    From Christmas parties and EOFY celebrations through to
+                    conferences and awards nights, we can recommend an
+                    experience that fits the way your event is being run.
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
 
 </section>
 
@@ -440,9 +1154,11 @@
         </h2>
 
         <p>
+
             From the initial planning through to pack-down, our experienced
             team takes care of the details so your photo booth runs smoothly
             as part of your event.
+
         </p>
 
     </div>
@@ -463,14 +1179,16 @@
                 Experienced Event Team
             </h3>
 
-<p>
-    Our team handles delivery, setup, operation and pack-down,
-    with your photo booth ready to go before your event begins.
-    You can focus on your guests while we take care of the
-    experience. You can also find more information about event
-    requirements and what to expect on our
-    <a href="faqs.html">frequently asked questions</a> page.
-</p>
+            <p>
+
+                Our team handles delivery, setup, operation and pack-down,
+                with your photo booth ready to go before your event begins.
+                You can focus on your guests while we take care of the
+                experience. You can also find more information about event
+                requirements and what to expect on our
+                <a href="faqs.html">frequently asked questions</a> page.
+
+            </p>
 
         </div>
 
@@ -487,15 +1205,17 @@
                 Custom Event Branding
             </h3>
 
-<p>
-    Bring your event branding into the experience with custom
-    artwork for prints, digital photos and sharing. Your event
-    can have a cohesive look from the photo booth through to
-    the content guests take away. You can also
-    <a href="https://photoboothhiremelbourne.smugmug.com/Client-Galleries">
-        view examples from recent events in our client gallery
-    </a>.
-</p>
+            <p>
+
+                Bring your event branding into the experience with custom
+                artwork for prints, digital photos and sharing. Your event
+                can have a cohesive look from the photo booth through to
+                the content guests take away. You can also
+                <a href="https://photoboothhiremelbourne.smugmug.com/Client-Galleries">
+                    view examples from recent events in our client gallery
+                </a>.
+
+            </p>
 
         </div>
 
@@ -513,9 +1233,11 @@
             </h3>
 
             <p>
+
                 Choose from professional DSLR photography, digital experiences,
                 roaming photography and 360° video, with options to suit your
                 event format, venue, audience and goals.
+
             </p>
 
         </div>
@@ -542,15 +1264,19 @@
         </h2>
 
         <p>
+
             Tell us a little about your event, including the date, venue,
             event timings, approximate guest numbers and the type of event
             you're planning. We'll recommend photo booth options that suit
             your event, audience and branding.
+
         </p>
 
         <a href="mailto:hello@photoboothhiremelbourne.com"
            class="button button-light">
+
             Enquire About Your Event
+
         </a>
 
     </div>
@@ -566,14 +1292,11 @@
 
 <footer class="site-footer">
 
-
     <div class="footer-inner">
-
 
         <img src="photo-booth-hire-melbourne-logo-white.png"
              alt="Photo Booth Hire Melbourne"
              class="footer-logo">
-
 
         <p>
 
@@ -585,51 +1308,35 @@
 
         <div class="footer-contact">
 
-
             <a href="mailto:hello@photoboothhiremelbourne.com">
-
                 hello@photoboothhiremelbourne.com
-
             </a>
-
 
             <a href="tel:0402466765">
-
                 0402 466 765
-
             </a>
-
 
         </div>
 
 
-
         <div class="footer-links">
-
 
             <a href="faqs.html">
                 FAQs
             </a>
 
-
             <a href="terms-and-conditions.html">
                 Terms &amp; Conditions
             </a>
 
-
         </div>
 
 
-
         <p class="copyright">
-
             © 2026 Photo Booth Hire Melbourne. All rights reserved.
-
         </p>
 
-
     </div>
-
 
 </footer>
 
@@ -660,11 +1367,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
 });
 </script>
-
-
-</body>
-
-</html>
 
 
 </body>
